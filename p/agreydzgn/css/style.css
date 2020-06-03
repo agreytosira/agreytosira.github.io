@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif !important;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 75% !important;
+}
+
+/* Navbar */
+
+.navbar {
+    background: white;
+}
+
+.navbar .navbar-brand {
+    padding: 0;
+    font-weight: 700;
+    color: #2880CE !important;
+}
+
+.navbar .navbar-nav .nav-item a {
+    font-weight: 700;
+    padding: 10px 15px;
+    color: #2880CE;
+    transition: all 0.2s;
+}
+
+
+
+
+/* Header */
+
+header .jumbotron {
+    background: white;
+    padding: 150px 0px 150px 0px;
+}
+
+.header-title {
+    color: #2880CE;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    color: #2880CE;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.judul-section {
+    text-transform: uppercase;
+    color: #2880CE;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.judul-section::after {
+    content: '';
+    display: block;
+    margin: auto;
+    border-bottom: 2px solid #FFD629;
+    width: 120px;
+    height: 20px;
+}
+
+.text-section {
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background: #2880CE !important;
+    padding: 8px 15px !important;
+    font-size: 14px !important;
+}
+
+.btn-secondary {
+    background: white !important;
+    color: #2880CE !important;
+    padding: 8px 15px !important;
+    font-size: 14px !important;
+    border: 1px solid #2880CE !important;
+}
+
+header img {
+    position: relative;
+    margin-top: -30px;
+    margin-left: 180px;
+    margin-bottom: 160px;
+    display: inline-block;
+    width: 500px;
+    z-index: -1;
+}
+
+/* Tentang */
+
+.tentang {
+    padding: 30px 0px 30px 0px;
+}
+
+/* Proses */
+
+.proses {
+    padding: 70px 0px 70px 0px;
+}
+
+.proses img {
+    width: 100%;
+}
+
+.proses .proses-langkah {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #D03801;
+}
+
+.proses .proses-nama {
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: block;
+    color: #2880CE;
+}
+
+.proses .proses-baris {
+    margin-top: 40px;
+}
+
+.proses span {
+    border-radius: 12px;
+    padding: 10px;
+    background: #2880CE;
+    margin: 30px 0px;
+    display: block;
+    text-align: center !important;
+    font-weight: 700;
+}
+
+/* Pembayaran */
+
+.pembayaran {
+    padding: 70px 0px 70px 0px;
+}
+
+.pembayaran img {
+    width: 30%;
+}
+
+.pembayaran .isi-pembayaran {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto !important;
+}
+
+/* Special Jumbotron */
+
+.special-jumbotron {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #2880CE, #00427c);
+}
+
+/* Harga */
+
+.harga {
+    padding: 70px 0px 70px 0px;
+}
+
+.harga-menu {
+    display: block;
+    font-weight: 600;
+    color: white;
+    margin: 15px 0px;
+    padding: 50px;
+    background: #2880CE;
+    transition: all 0.2s ease;
+}
+
+.harga-menu:hover {
+    color: #FFD629;
+    text-decoration: none;
+    background: linear-gradient(180deg, #2880CE, #00427c);
+}
+
+/* Modal */
+.modal-title {
+    font-weight: 700;
+}
+
+.modal-body h4 {
+    font-weight: 600;
+}
+
+.modal-body ul li {
+    margin-left: 30px;
+}
+
+.modal-body .harga-label {
+    margin: 10px;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #002342;
+    background: #2880CE;
+    list-style: none;
+    font-weight: bold;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 70px 0px 70px 0px;
+}
+
+.portfolio-menu {
+    margin: 5px;
+    margin-bottom: 20px;
+    background: #2880CE;
+}
+
+
+.portfolio-menu:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    background: #2880CE;
+    padding: 30px 0px 10px 0px;
+}
+
+footer p span {
+    font-weight: 700;
+}
+
+footer ul li {
+    list-style: none;
+    line-height: 35px;
+}
+
+footer ul li a {
+    color: white;
+    transition: all 0.2s ease;
+}
+
+footer ul li a:hover {
+    color: #FFD629;
+    text-decoration: none;
+    padding-left: 10px;
+    font-weight: 700;
+    border-left: 2px solid #FFD629;
+    margin-left: 10px;
+}
+
+/* Responsive Android */
+
+@media (max-width:768px) {
+    header img {
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-bottom: 160px;
+    }
+
+    .container {
+        width: 95% !important;
+    }
+
+    header .btn-primary {
+        width: 100%;
+    }
+
+    header .btn-secondary {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .pembayaran img {
+        width: 12vh;
+        display: inline-block;
+        margin-left: 60px;
+    }
+
+    .navbar .navbar-nav .nav-item a:hover {
+        color: #ffd629;
+        font-weight: 700;
+    }
+
+    .link-aktif {
+        color: #FFD629;
+        font-weight: 700;
+    }
+}
+
+/* Responsive PC */
+
+@media (min-width:768px) {
+    .navbar .navbar-nav .nav-item a:hover {
+        color: #FFD629;
+    }
+
+    .link-aktif {
+        border-bottom: 3px solid #FFD629;
+    }
+}

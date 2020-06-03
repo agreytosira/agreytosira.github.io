@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #31353B;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Utility */
+
+.judul-section {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bg-greystore {
+    background: #03AC0E;
+}
+
+.btn-greystore {
+    background: #03AC0E;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+}
+
+.btn-greystore:hover {
+    background: #006e07;
+    color: white;
+}
+
+/* Navbar */
+
+nav.navbar {
+    background: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav.navbar .navbar-brand {
+    color: #03AC0E;
+    font-weight: 700;
+}
+
+nav.navbar .navbar-brand:hover {
+    color: #03AC0E;
+}
+
+nav.navbar ul {
+    z-index: 999;
+}
+
+nav.navbar ul li a {
+    font-weight: 400;
+}
+
+nav.navbar ul li ul {
+    margin-top: 6px;
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 20px;
+    background: #03AC0E;
+}
+
+nav.navbar ul li ul li a {
+    color: white;
+    display: block;
+    padding: 10px 5px;
+}
+
+nav.navbar ul li ul li a:hover {
+    color: #31353B;
+    text-decoration: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+nav.navbar .dropdown:hover {
+    cursor: pointer;
+    border-bottom: none !important;
+}
+
+/* Pengumuman */
+
+.pengumuman {
+    font-size: 14px;
+    padding: 20px 0px;
+    margin-top: 60px;
+}
+
+/* Pencarian */
+
+input[type=text] {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #31353B;
+    background-image: url('https://img.icons8.com/pastel-glyph/2x/search.png');
+    background-size: 25px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+/* Populer */
+
+.populer {
+    padding: 35px 0px 35px 0px;
+}
+
+.populer .col-lg-3 {
+    padding: 5px;
+}
+
+.populer a {
+    color: #31353B;
+}
+
+.populer a:hover {
+    text-decoration: none;
+}
+
+.populer .gambar-item img {
+    width: 100px !important;
+    height: 100px !important;
+    float: left;
+    padding: 10px;
+}
+
+.populer .nama-item {
+    font-weight: 600 !important;
+    float: right;
+    font-size: 12px;
+}
+
+.populer .box-populer {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 12px;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Flash Sale */
+
+.flash-sale {
+    padding: 0px 0px 20px 0px;
+}
+
+.flash-sale .diskon span {
+    margin-right: 5px;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 3px 6px;
+    font-weight: bold;
+    display: inline-block;
+    color: #FF5C84;
+    background: #FFEAEF;
+}
+
+.flash-sale .diskon s {
+    font-size: 10px;
+    color: #31353B;
+}
+
+.flash-sale .col {
+    padding: 5px;
+}
+
+.flash-sale .card {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.flash-sale .card-title {
+    font-size: 12px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.flash-sale .card-body {
+    background: white;
+}
+
+.flash-sale .card-text {
+    color: #FA591D;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card a {
+    color: #31353B;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+/* Produk Terbaru */
+
+/* Flash Sale */
+
+.produk {
+    padding: 0px 0px 20px 0px;
+}
+
+.produk .diskon span {
+    margin-right: 5px;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 3px 6px;
+    font-weight: bold;
+    display: inline-block;
+    color: #FF5C84;
+    background: #FFEAEF;
+}
+
+.produk .diskon s {
+    font-size: 10px;
+    color: #31353B;
+}
+
+.produk .col {
+    padding: 5px;
+}
+
+.produk .card {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.produk .card-title {
+    height: 40px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.produk .card-body {
+    background: white;
+}
+
+.produk .card-text {
+    color: #FA591D;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card a {
+    color: #31353B;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+/* Tombol back to top */
+
+.to_top {
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 100%;
+    position: fixed;
+    right: 10px;
+    background-color: #03AC0E;
+    color: #fff;
+    cursor: pointer;
+    bottom: 10px;
+    font-weight: bold;
+}
+
+.to_top:hover {
+    background: #006e07 !important;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid lightgrey;
+    padding: 30px 0px 30px 0px;
+}
+
+footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer ul li,
+footer p {
+    font-weight: 400;
+    font-size: 13px;
+    list-style: none;
+    line-height: 30px;
+}
+
+footer ul li a,
+footer p {
+    color: grey;
+    transition: all 0.2s;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #03AC0E;
+    font-weight: 600;
+}
+
+footer p a {
+    color: grey !important;
+}
+
+footer p a:hover {
+    color: #03AC0E !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Detail Barang */
+
+.detail {
+    padding: 70px 0px 70px 0px;
+}
+
+.detail img {
+    width: 100%;
+}
+
+.detail .nama-produk {
+    font-size: 17.5px;
+    font-weight: 600;
+}
+
+.detail .harga-produk {
+    font-size: 24px;
+    color: #FA591D;
+    font-weight: 700;
+}
+
+.detail .teks-produk {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.detail .deskripsi-produk {
+    font-size: 12px !important;
+}
+
+.detail .tombol-produk a {
+    display: inline-block;
+    background: #03AC0E;
+    padding: 10px 30px;
+    border-radius: 12px;
+    color: white;
+}
+
+.detail .tombol-produk a:hover {
+    text-decoration: none;
+    background: #006e07;
+}
+
+/************** Responsive PC ************/
+
+@media (min-width:768px) {
+    .tombol-special {
+        margin-left: 10px;
+        border-radius: 25px;
+        font-weight: bold !important;
+        color: white !important;
+        padding: 10px 30px !important;
+        background: #03AC0E;
+    }
+
+    .tombol-special:hover {
+        background: #006e07;
+    }
+
+    .aktif {
+        color: #03AC0E !important;
+        font-weight: bold !important;
+        border-bottom: 2px solid #03AC0E;
+    }
+
+    nav.navbar .nav-link {
+        transition: all 0.2s;
+        margin: 0 5px;
+    }
+
+    nav.navbar #link-menu:hover {
+        border-bottom: 2px solid #03AC0E;
+        color: #03AC0E !important;
+    }
+}
+
+/************ Responsive Android ***********/
+
+@media(max-width:768px) {
+    .detail .nama-produk {
+        margin-top: 30px;
+    }
+}
