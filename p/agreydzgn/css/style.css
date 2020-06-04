@@ -120,6 +120,15 @@ header img {
     padding: 70px 0px 70px 0px;
 }
 
+.proses a {
+    color: #fff;
+}
+
+.proses a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
 .proses img {
     width: 100%;
 }
