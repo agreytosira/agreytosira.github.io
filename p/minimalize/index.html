@@ -60,7 +60,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 m-auto">
-                    <h2>Tentang</h2>
+                    <h2 class="text-center">Tentang</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sed sequi at nam debitis nemo
                         quod, similique minus officia minima aperiam, illum exercitationem! Exercitationem perferendis
                         impedit commodi. Aperiam voluptate quia nihil officia repudiandae repellat eaque adipisci.
@@ -125,10 +125,10 @@
                 <div class="col-lg-4 footer-box">
                     <h5>Internal Link</h5>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Tentang</a></li>
-                        <li><a href="#">Layanan</a></li>
-                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#page-top">Home</a></li>
+                        <li><a href="#tentang">Tentang</a></li>
+                        <li><a href="#layanan">Layanan</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 footer-box">
@@ -148,7 +148,7 @@
     </footer>
 
     <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
+        var scroll = new SmoothScroll('a[href*="#"]', { speed: 500, speedAsDuration: true });
     </script>
 
     <!-- Optional JavaScript -->
