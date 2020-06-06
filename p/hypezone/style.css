@@ -1,0 +1,311 @@
+:root {
+    --primary-color: #222236;
+    --primary-dark-color: #0e0e17;
+    --secondary-color: #FFD38F;
+    --secondary-dark-color: #ff8345;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+.btn-primary {
+    border-radius: 6px;
+    padding: 8px 20px;
+    margin: 0px 5px;
+    border: none;
+    transition: all 0.2s ease;
+    background: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark-color);
+}
+
+.btn-secondary {
+    transition: all 0.2s ease;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    margin: 0px 5px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    color: var(--primary-color);
+    background: var(--secondary-dark-color);
+}
+
+/* Navbar */
+
+nav.navbar {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+nav.navbar .navbar-brand {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+nav.navbar .navbar-brand span {
+    color: var(--secondary-dark-color);
+}
+
+nav.navbar .nav-item {
+    padding: 0px 10px;
+}
+
+nav.navbar .nav-link {
+    color: var(--primary-color) !important;
+    transition: all 0.2 ease;
+}
+
+nav.navbar .nav-link:hover {
+    color: var(--secondary-dark-color) !important;
+}
+
+/* Jumbotron */
+.jumbotron {
+    color: white;
+    margin-top: 70px;
+    padding: 190px 0px;
+    min-height: 500px;
+    background: url(img/header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron h1::after {
+    content: '';
+    display: block;
+    width: 170px;
+    height: 2px;
+    background: white;
+    margin: auto;
+    margin-top: 28px;
+}
+
+.jumbotron button {
+    margin-top: 30px;
+}
+
+/* Promo */
+
+.promo {
+    padding: 120px 0px;
+}
+
+.promo-row {
+    margin-top: 50px;
+}
+
+.promo .col-md-3 {
+    padding: 0;
+}
+
+.promo-col,
+.produk-col {}
+
+.promo-box,
+.produk-box {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.promo-col img,
+.produk-col img {
+    width: 100%;
+}
+
+.promo-col .name,
+.produk-col .name {
+    margin-top: 10px;
+    height: 45px;
+    overflow: hidden;
+    padding: 0px 10px;
+}
+
+.promo-col .price,
+.produk-col .price {
+    font-weight: 600;
+}
+
+.promo-col .price span,
+.produk-col .price span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Kategori */
+
+.kategori {
+    padding: 100px 0px;
+}
+
+.kategori-box {
+    padding: 100px;
+    margin: 10px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.kategori-box[kategori="kaos"] {
+    background: url(img/kaos.jpg);
+}
+
+.kategori-box[kategori="celana"] {
+    background: url(img/celana.jpg);
+}
+
+.kategori-box[kategori="jaket-bomber"] {
+    background: url(img/jaket-bomber.jpg);
+}
+
+.kategori-box[kategori="jaket-hoodie"] {
+    background: url(img/jaket-hoodie.jpg);
+}
+
+.kategori-row a:hover {
+    text-decoration: none;
+}
+
+.kategori-box:hover {
+    opacity: 0.8;
+}
+
+.kategori-row {
+    margin-top: 50px;
+}
+
+/* Produk */
+.produk {
+    padding: 100px 0px;
+}
+
+
+.page {
+    margin: 60px auto;
+}
+
+.page .page-active {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.page .page-active:hover {
+    background: var(--primary-dark-color);
+
+}
+
+.page .page-nonactive {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.page .page-nonactive:hover {
+    background: var(--secondary-dark-color);
+}
+
+.page a {
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin: 0 3px;
+}
+
+.page a:hover {
+    text-decoration: none;
+}
+
+
+/* Responsive Android */
+
+@media (max-width:768px) {
+    .promo-col .name {
+        padding: 0px !important;
+    }
+
+    .promo-col .name p {
+        font-size: 14px;
+    }
+
+    .promo-col button {
+        display: inline-block;
+    }
+
+    .kategori-box {
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+        margin: 10px 0px;
+        color: white;
+        font-weight: 700;
+        font-size: 32px;
+        border-radius: 12px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+}
+
+@media (max-width:320px) {
+    .promo-col button {
+        margin: 0 !important;
+        padding: 4px 10px;
+    }
+}

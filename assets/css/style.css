@@ -12,6 +12,26 @@
     --dark-color: #005c9d;
 }
 
+::-webkit-scrollbar {
+    background: white;
+}
+
+::-webkit-scrollbar-button {}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: var(--primary-color);
+}
+
+::-moz-selection {
+    background: var(--dark-color);
+}
+
+::selection {
+    background: var(--dark-color);
+    color: white;
+}
+
 #header {
     height: 100vh;
     background-image: url(../img/background.png);
@@ -42,12 +62,16 @@ h1 {
     font-size: 34px;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
-p { 
+p {
     font-family: 'Open Sans', sans-serif;
     color: #777;
 }
@@ -65,7 +89,7 @@ p {
     margin: 10px 0px;
     padding: 10px 20px;
     border: none;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: var(--primary-color);
     color: white;
     transition: all 0.2s ease;
@@ -82,7 +106,7 @@ p {
     transition: all 0.2s;
     margin: 10px 0px;
     padding: 10px 20px;
-    border: 2px solid  var(--primary-color);
+    border: 2px solid var(--primary-color);
     font-family: 'Poppins', sans-serif;
     background: transparent;
     cursor: pointer;
@@ -137,9 +161,9 @@ p {
     z-index: 2;
     width: 270px;
     height: 100vh;
-    right:0;
+    right: 0;
     top: 0;
-    background: var(--primary-color);
+    background: var(--dark-color);
     transition: all 0.2s ease;
     box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.3);
 }
@@ -167,7 +191,7 @@ p {
 
 #navbar ul li a:hover {
     padding: 10px 80px;
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
 }
 
 
@@ -207,13 +231,13 @@ p {
 }
 
 .skills-row {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
 .skills-left-col {
-    flex-basis:40%;
+    flex-basis: 40%;
     margin-left: 100px;
 }
 
@@ -267,7 +291,7 @@ p {
     margin: 10px 10px;
     padding: 10px 20px;
     border: none;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: var(--primary-color);
     color: #fff;
     transition: all 0.2s ease;
@@ -323,7 +347,7 @@ p {
     width: 60%;
 }
 
-.kontak-menu ul a{
+.kontak-menu ul a {
     list-style: none;
     padding: 10px 20px;
     margin: 10px 0px;
@@ -337,7 +361,7 @@ p {
 }
 
 .kontak-menu ul a:hover {
-    background : transparent;
+    background: transparent;
     border: 2px solid #0396ff;
     color: var(--primary-color);
 }
@@ -447,7 +471,8 @@ p {
     #header {
         background-image: none;
     }
-    .container{
+
+    .container {
         margin: 0 20px;
     }
 
@@ -470,7 +495,8 @@ p {
         right: 30px;
     }
 
-    .tentang-left-col,.tentang-right-col {
+    .tentang-left-col,
+    .tentang-right-col {
         flex-basis: 100%;
     }
 
@@ -487,9 +513,9 @@ p {
         flex-basis: 100%;
         margin: 0px 30px;
     }
-    
-    .skills-left-col ul{
-        text-align:left;
+
+    .skills-left-col ul {
+        text-align: left;
     }
 
     .skills-right-col {
@@ -528,7 +554,7 @@ p {
 
     .kontak-menu {
         margin: 0px;
-        width:100%;
+        width: 100%;
     }
 
     #footer {
