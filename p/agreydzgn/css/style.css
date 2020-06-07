@@ -7,6 +7,7 @@ html {
 body {
     font-family: 'Quicksand', sans-serif !important;
     overflow-x: hidden;
+    color: #001534 !important;
 }
 
 * {
@@ -20,24 +21,29 @@ body {
 
 /* Navbar */
 
+.nav-scrolled {
+    background: white !important;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
 .navbar {
     background: white;
 }
 
 .transparent {
-    background: transparent !important;
+    background: transparent;
 }
 
 .navbar .navbar-brand {
     padding: 0;
     font-weight: 700;
-    color: #2880CE !important;
+    color: #0166ff !important;
 }
 
 .navbar .navbar-nav .nav-item a {
     font-weight: 700;
     padding: 10px 15px;
-    color: #2880CE;
+    color: #0166ff;
     transition: all 0.2s;
 }
 
@@ -59,14 +65,14 @@ header .jumbotron {
 }
 
 .header-title {
-    color: #2880CE;
+    color: #0166ff;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .header-text {
-    color: #2880CE;
+    color: #0166ff;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -74,7 +80,7 @@ header .jumbotron {
 
 .judul-section {
     text-transform: uppercase;
-    color: #2880CE;
+    color: #0166ff;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
@@ -85,7 +91,7 @@ header .jumbotron {
     content: '';
     display: block;
     margin: auto;
-    border-bottom: 2px solid #FFD629;
+    border-bottom: 2px solid #ff4342;
     width: 120px;
     height: 20px;
 }
@@ -96,17 +102,17 @@ header .jumbotron {
 }
 
 .btn-primary {
-    background: #2880CE !important;
+    background: #0166ff !important;
     padding: 8px 15px !important;
     font-size: 14px !important;
 }
 
 .btn-secondary {
     background: white !important;
-    color: #2880CE !important;
+    color: #0166ff !important;
     padding: 8px 15px !important;
     font-size: 14px !important;
-    border: 1px solid #2880CE !important;
+    border: 1px solid #0166ff !important;
 }
 
 header img {
@@ -149,14 +155,14 @@ header img {
     display: block;
     font-weight: 700;
     text-transform: uppercase;
-    color: #D03801;
+    color: #002e74;
 }
 
 .proses .proses-nama {
     margin-bottom: 20px;
     font-weight: 600;
     display: block;
-    color: #2880CE;
+    color: #0166ff;
 }
 
 .proses .proses-baris {
@@ -166,7 +172,7 @@ header img {
 .proses span {
     border-radius: 12px;
     padding: 10px;
-    background: #2880CE;
+    background: #0166ff;
     margin: 30px 0px;
     display: block;
     text-align: center !important;
@@ -200,7 +206,7 @@ header img {
     padding-bottom: 120px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #2880CE, #00427c);
+    background: linear-gradient(180deg, #0166ff, #00427c);
 }
 
 /* Harga */
@@ -215,14 +221,14 @@ header img {
     color: white;
     margin: 15px 0px;
     padding: 50px;
-    background: #2880CE;
+    background: #0166ff;
     transition: all 0.2s ease;
 }
 
 .harga-menu:hover {
-    color: #FFD629;
+    color: #ff4342;
     text-decoration: none;
-    background: linear-gradient(180deg, #2880CE, #00427c);
+    background: linear-gradient(180deg, #0166ff, #00427c);
 }
 
 /* Modal */
@@ -244,7 +250,7 @@ header img {
     display: inline-block;
     padding: 5px 10px;
     color: #002342;
-    background: #2880CE;
+    background: #0166ff;
     list-style: none;
     font-weight: bold;
 }
@@ -258,7 +264,7 @@ header img {
 .portfolio-menu {
     margin: 5px;
     margin-bottom: 20px;
-    background: #2880CE;
+    background: #0166ff;
 }
 
 
@@ -271,12 +277,13 @@ header img {
 
 footer {
     color: white;
-    background: #2880CE;
+    background: #0166ff;
     padding: 30px 0px 10px 0px;
 }
 
 footer p span {
     font-weight: 700;
+    font-size: 24px;
 }
 
 footer ul li {
@@ -290,11 +297,11 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #FFD629;
+    color: #ff4342;
     text-decoration: none;
     padding-left: 10px;
     font-weight: 700;
-    border-left: 2px solid #FFD629;
+    border-left: 2px solid #ff4342;
     margin-left: 10px;
 }
 
@@ -328,12 +335,12 @@ footer ul li a:hover {
     }
 
     .navbar .navbar-nav .nav-item a:hover {
-        color: #ffd629;
+        color: #ff4342;
         font-weight: 700;
     }
 
     .link-aktif {
-        color: #FFD629;
+        color: #ff4342;
         font-weight: 700;
     }
 }
@@ -342,10 +349,10 @@ footer ul li a:hover {
 
 @media (min-width:768px) {
     .navbar .navbar-nav .nav-item a:hover {
-        color: #FFD629;
+        color: #ff4342;
     }
 
     .link-aktif {
-        border-bottom: 3px solid #FFD629;
+        border-bottom: 3px solid #ff4342;
     }
 }
