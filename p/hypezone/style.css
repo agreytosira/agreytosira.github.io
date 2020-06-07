@@ -144,8 +144,6 @@ nav.navbar .nav-link:hover {
     padding: 0;
 }
 
-.promo-col,
-.produk-col {}
 
 .promo-box,
 .produk-box {
@@ -270,6 +268,67 @@ nav.navbar .nav-link:hover {
     text-decoration: none;
 }
 
+/* Pembayaran */
+
+.pembayaran {
+    padding: 100px 0px;
+}
+
+.pembayaran-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pembayaran-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pembayaran-img {
+    width: 200px;
+    display: block;
+}
+
+.pembayaran img {
+    width: 175px;
+    padding: 10px;
+    margin: auto !important;
+    height: 175px;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 100px 0px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.footer ul li {
+    list-style: none;
+    line-height: 50px;
+}
+
+.footer ul li a {
+    color: white;
+}
+
+.footer ul li a:hover {
+    text-decoration: none;
+    color: var(--secondary-dark-color);
+}
 
 /* Responsive Android */
 
@@ -307,5 +366,19 @@ nav.navbar .nav-link:hover {
     .promo-col button {
         margin: 0 !important;
         padding: 4px 10px;
+    }
+
+    .produk-col .price span {
+        font-size: 16px;
+    }
+
+    .promo-box,
+    .produk-box {
+        margin: 10px 0px;
+    }
+
+    .promo-box .name,
+    .produk-box .name {
+        height: 50px;
     }
 }
