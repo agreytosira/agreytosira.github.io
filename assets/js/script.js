@@ -7,9 +7,7 @@ $(document).ready(function () {
     menuBtn.onclick = function () {
         if (navbar.style.right == "-270px") {
             navbar.style.right = "0";
-        }
-
-        else {
+        } else {
             navbar.style.right = "-270px";
         }
     }
