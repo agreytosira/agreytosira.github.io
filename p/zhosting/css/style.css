@@ -1,0 +1,312 @@
+:root {
+    --primary-color: #020B5B;
+    --secondary-color: #0238cd;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Button */
+
+.btn-primary {
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-weight: 600;
+    padding: 10px 16px;
+}
+
+.btn-primary.active,
+.btn-primary:hover {
+    background: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    font-weight: 600;
+    padding: 10px 16px;
+}
+
+.btn-secondary.active,
+.btn-secondary:hover {
+    background: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+/* Navbar */
+
+.navbar {
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.navbar-brand img {
+    width: 200px;
+}
+
+.navbar .nav-item {
+    padding: 10px 12px;
+}
+
+.navbar .nav-link {
+    text-transform: uppercase;
+    color: var(--primary-color) !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    overflow-x: hidden !important;
+    background: url(../background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 260px 0px;
+    padding-top: 310px;
+}
+
+.jumbotron-left-col {
+    margin-top: -100px;
+    margin-left: 50px;
+}
+
+.jumbotron-button {
+    margin-left: 20px;
+}
+
+/* Benefit */
+
+.benefit {
+    padding: 100px 0px;
+}
+
+.benefit-row {
+    margin: 40px 0px;
+}
+
+.benefit-box {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 60px 0px;
+}
+
+.benefit-col {
+    text-align: center;
+}
+
+.benefit-col img {
+    margin-bottom: 10px;
+    flex-basis: 100%;
+    width: 136px;
+}
+
+/* About */
+
+.about {
+    padding: 100px 0px;
+    text-align: center;
+}
+
+/* Price */
+.price {
+    padding: 100px 0px;
+}
+
+.price-box {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.price-row {
+    margin-top: 30px;
+}
+
+.price-box {
+    padding: 30px 0px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.price-box h3 {
+    color: var(--primary-color);
+}
+
+.price-box p span {
+    font-size: 26px;
+}
+
+.price-box p {
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.price-box ul {
+    padding: 10px 0px;
+}
+
+.price-box ul li {
+    line-height: 50px;
+    list-style: none;
+    font-weight: 600;
+}
+
+/* Slider */
+
+.customer {
+    padding: 30px 50px;
+    background: #f7f7f8;
+}
+
+.customer h1 {
+    text-align: center;
+    padding-top: 5%;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #000 !important;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.owl-dots {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.owl-dot.active {
+    background-color: #7c9ee6 !important;
+}
+
+/* Contact */
+
+.contact {
+    padding: 100px 0px;
+}
+
+.contact p {
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.contact input {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact textarea {
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Footer */
+
+.footer {
+    background: #f7f7f8;
+    padding: 10px 0px;
+}
+
+.footer img {
+    width: 243px;
+}
+
+.footer .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-logo img {
+    width: 180px;
+}
+
+.footer .footer-credit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer .footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-social ul li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.footer .footer-social a {
+    color: black;
+    transition: all 0.2s ease;
+}
+
+.footer .footer-social a:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Android */
+
+@media (max-width:768px) {
+
+    .jumbotron {
+        padding: 200px 0px;
+        background: none;
+    }
+
+    .jumbotron-left-col {
+        margin-left: 0px;
+    }
+
+    .jumbotron-left-col img {
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    .benefit-box {
+        margin: 10px 0px;
+    }
+
+    .price-box {
+        margin: 10px 0px;
+    }
+}
