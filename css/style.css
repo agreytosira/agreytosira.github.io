@@ -397,4 +397,12 @@ p {
     .navbar-brand img {
         width: 200px;
     }
+
+    .jumbotron-left h3 {
+        font-size: 16px;
+    }
+
+    .jumbotron-left h1 {
+        font-size: 24px;
+    }
 }
