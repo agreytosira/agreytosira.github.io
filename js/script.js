@@ -6,7 +6,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 
 $('document').ready(function () {
     var typed = new Typed('#typed', {
-        strings: ["Front-end Dev", "Graphic Designer", "Full-time Freelancer"],
+        strings: ["Front-end Dev", "Graphic Designer", "Freelancer"],
         backSpeed: 40,
         typeSpeed: 40,
         loop: true

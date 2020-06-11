@@ -123,8 +123,19 @@ p {
     font-size: 40px;
 }
 
-.jumbotron-left h1,
+.jumbotron-left h3 {
+    font-size: 30px;
+    color: #0a236b;
+}
+
 .jumbotron-left p {
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px !important;
+    display: inline-block;
+}
+
+.jumbotron-left h1 {
     margin-bottom: 15px !important;
 }
 
@@ -309,6 +320,14 @@ p {
 /* Android Breakpoint */
 
 @media (max-width:768px) {
+
+    .jumbotron-left h3 {
+        font-size: 20px;
+    }
+
+    .jumbotron-left h1 {
+        font-size: 28px;
+    }
 
     .about-left {
         text-align: center;
