@@ -14,6 +14,7 @@ h5 {
     font-weight: 700;
 }
 
+
 body {
     color: #1c1c1c;
 }
@@ -82,7 +83,7 @@ p {
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 15px;
     padding: 10px 15px !important;
 }
 
@@ -115,6 +116,11 @@ p {
     background: #d6dadd;
 }
 
+.jumbotron-left,
+.jumbotron-right {
+    margin-top: 20px;
+}
+
 .jumbotron-left {
     padding: 100px 20px;
 }
@@ -139,9 +145,16 @@ p {
     margin-bottom: 15px !important;
 }
 
+.jumbotron-right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 .jumbotron-right img {
-    float: right;
-    width: 464px;
+    width: 370px;
+    margin-top: 20px;
+    margin-left: 160px;
 }
 
 /* About */
@@ -346,6 +359,7 @@ p {
 
     .jumbotron-left {
         text-align: center;
+        padding-bottom: 30px;
     }
 
     .jumbotron-right {
@@ -370,6 +384,11 @@ p {
 
     .testimonials-right {
         padding: 20px;
+    }
+
+    .jumbotron-left,
+    .jumbotron-right {
+        margin-top: 0px;
     }
 
 }
