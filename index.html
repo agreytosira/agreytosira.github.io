@@ -2,348 +2,262 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="img/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrey Tosira - Front-end Web Developer</title>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <!-- Smooth Scroll -->
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-
-    <!-- Open Graph Meta -->
-    <meta property="og:title" content="Agrey Tosira - Front-end Web Developer" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description"
-        content="Selamat datang di Website Portfolio Agrey Tosira. Saya adalah seorang Front-end Web Developer" />
-    <meta property="og:image" content="https://agreytosira.github.io/assets/img/thumbnail.png" />
-    <meta property="og:site_name" content="Agrey Tosira - Front-end Web Developer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 </head>
 
-<body>
+<body id="page-top">
 
-    <section id="header">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <img class="logo" src="assets/img/logo.png" alt="">
-            <div class="header-text">
-                <h1>Agrey Tosira</h1>
-                <span class="square"></span>
-                <p>Front-end Web Developer and Graphic Designer</p>
-                <a href="#kontak"><button class="btn-primary">Kontak Saya</button></a><br>
-                <div class="line">
-                    <div class="line1"></div><br>
-                    <div class="line2"></div><br>
-                    <div class="line3"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <nav id="navbar">
-        <ul>
-            <a href="#header">
-                <li><img src="assets/img/logo-white.png" alt=""></li>
-            </a>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#tentang">Tentang</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-        </ul>
-    </nav>
-    <img src="assets/img/menu.png" id="menuBtn" alt="">
-
-    <section id="tentang">
-        <div class="tentang-row">
-            <div class="tentang-left-col">
-                <img src="assets/img/about.png" alt="">
-            </div>
-            <div class="tentang-right-col">
-                <div class="tentang-text">
-                    <h1>Tentang Saya</h1>
-                    <span class="square"></span>
-                    <p>Perkenalkan nama saya Agrey Tosira, Saya adalah seorang Front-end Web Developer. Saya tinggal di
-                        Provinsi Jambi. Hobby Bermain Komputer sejak kelas 3 SD Hingga sekarang.
-                        Sangat tertarik pada bidang IT Terutama pada Web Development dan Desain Grafis.</p><br>
-                    <p>Saya tertarik pada Web Development, yaitu HTML, CSS, Javascript, dan PHP. Saya juga telah
-                        menguasai beberapa Framework seperti Bootstrap 4, Tailwind.CSS, jQuery, ReactJS dan lain
-                        sebagainya. Saya juga
-                        bisa membuatkan Blog berbasis Blogger.</p><br>
-                    <div class="line">
-                        <div class="line1"></div><br>
-                        <div class="line2"></div><br>
-                        <div class="line3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-        <div class="skills-row">
-            <div class="skills-left-col">
-                <h1>Skills</h1>
-                <span class="square"></span>
-                <p>Beberapa Kemampuan yang saya kuasai</p>
-                <ul>
-                    <li style="width:80%">HTML <b>(80%)</b></li>
-                    <li style="width:70%">CSS <b>(70%)</b></li>
-                    <li style="width:60%">Javascript <b>(60%)</b></li>
-                    <li style="width:60%">jQuery <b>(60%)</b></li>
-                    <li style="width:70%">Bootstrap 4 <b>(70%)</b></li>
-                    <li style="width:70%">Graphic Design <b>(70%)</b></li>
-                </ul>
-                <div class="line">
-                    <div class="line1"></div><br>
-                    <div class="line2"></div><br>
-                    <div class="line3"></div>
-                </div>
-            </div>
-            <div class="skills-right-col">
-                <h1>Penghargaan</h1>
-                <span class="square"></span>
-                <p>Beberapa Penghargaan yang pernah saya raih</p>
-                <ul>
-                    <li>MikroTik Certified Network Associate, MTCNA <b>(2019)</b></li>
-                    <li>LSP TIK - Junior Networking <b>(2019)</b></li>
-                    <li>Medallion of Excellence - IT Network System Administration <b>(2019)</b></li>
-                </ul>
-                <div class="line">
-                    <div class="line1"></div><br>
-                    <div class="line2"></div><br>
-                    <div class="line3"></div>
-                </div>
-                <h1>Pengalaman</h1>
-                <span class="square"></span>
-                <p>Beberapa pengalaman saya dalam dunia IT</p>
-                <ul>
-                    <li>Training 3D Modeling Autodesk Maya in SMK Raden Umar Said Kudus, Jawa Tengah <b>(2018)</b></li>
-                    <li>Juara 1 Lomba Kompetensi Siswa tingkat Provinsi Jambi - bidang IT Network System Administration
-                        <b>(2019)</b></li>
-                    <li>Training IT Network System Administration in Binus Center Bintaro, Jakarta Selatan <b>(2019)</b>
+            <a class="navbar-brand" href="#page-top"><img src="img/logoheader.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#page-top">Home</a>
                     </li>
-                    <li>Training IT Network System Administration in Be:Logix Lengkong, Bandung <b>(2019)</b></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
-                <div class="line">
-                    <div class="line1"></div><br>
-                    <div class="line2"></div><br>
-                    <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 jumbotron-left">
+                    <h1>I am <span id="typed"></span></h1>
+                    <p>Welcome to my Portfolio Website, I am Front-end Developer,
+                        Graphic Designer and Full-time Freelancer. If you need some Website,
+                        you can contact me.</p>
+                    <a href="#contact" class="btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn-secondary">My Projects</a>
+                </div>
+                <div class="col-md-6 jumbotron-right">
+                    <img src="img/jumbotron.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 about-left">
+                    <h5>ABOUT ME</h5>
+                    <p>My Name is Agrey Tosira, I live in Jambi, Indonesia. I am Front-end Developer
+                        and Graphic Designer. If you need a website you can contact me.
+                        I'll make a Cheap Website with Premium Quality for you.</p>
+                    <a href="#contact" class="btn-primary">Contact Me</a>
+                </div>
+                <div class="col-md-6 about-right">
+                    <img src="img/about.png" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio">
+    <!-- Services -->
+    <section class="services" id="services">
         <div class="container">
-            <div class="text-portfolio">
-                <h1>Portfolio</h1>
-                <p>Berikut adalah Website dan Blog buatan saya</p>
-            </div>
-            <div class="menu-portfolio">
-                <button class="tombol-portfolio" id="tombol-semua">Semua</button>
-                <button class="tombol-portfolio" id="tombol-website">Website</button>
-                <button class="tombol-portfolio" id="tombol-blogger">Blogger</button>
-            </div>
-            <div class="portfolio-row">
-                <div class="box-portfolio tipe-website">
-                    <img src="assets/img/portfolio/zhosting.jpg" alt="">
-                    <div class="box-portfolio-text">
-                        <h3>ZHosting</h3>
-                        <p>Website Jasa Hosting</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center mb-5 d-block">
+                        <h5>SERVICES</h5>
+                        <p>I can provide websites of your needs, such as:</p>
                     </div>
-                    <a href="p/zhosting/index.html" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
-                </div>
-                <div class="box-portfolio tipe-website">
-                    <img src="assets/img/portfolio/agreydzgn.JPG" alt="">
-                    <div class="box-portfolio-text">
-                        <h3>AgreyDZGN</h3>
-                        <p>Website Jasa Desain Grafis</p>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <center>
+                                <img src="img/company.png" alt="">
+                                <p>Company Profile</p>
+                            </center>
+                        </div>
+                        <div class="col-md-3">
+                            <center>
+                                <img src="img/personal.png" alt="">
+                                <p>Personal Website</p>
+                            </center>
+                        </div>
+                        <div class="col-md-3">
+                            <center>
+                                <img src="img/shop.png" alt="">
+                                <p>Online Shop</p>
+                            </center>
+                        </div>
+                        <div class="col-md-3">
+                            <center>
+                                <img src="img/more.png" alt="">
+                                <p>And Many More</p>
+                            </center>
+                        </div>
                     </div>
-                    <a href="p/agreydzgn/index.html" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
-                </div>
-                <div class="box-portfolio tipe-website">
-                    <img src="assets/img/portfolio/greyhosting.jpg" alt="">
-                    <div class="box-portfolio-text">
-                        <h3>GreyHosting</h3>
-                        <p>Website Jasa Hosting</p>
+                    <div class="text-center mt-5">
+                        <a href="#contact" class="btn-primary">Contact Me</a>
                     </div>
-                    <a href="p/greyhosting/index.html" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
-                </div>
-                <div class="box-portfolio tipe-website">
-                    <img src="assets/img/portfolio/rexusshop.JPG" alt="">
-                    <div class="box-portfolio-text">
-                        <h3>Rexus Shop</h3>
-                        <p>Website Top Up Game Online</p>
-                    </div>
-                    <a href="p/rexusshop/index.html" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
-                </div>
-                <div class="box-portfolio tipe-website">
-                    <img src="assets/img/portfolio/greystore.jpg" alt="">
-                    <div class="box-portfolio-text">
-                        <h3>Grey Store</h3>
-                        <p>Website Jual Sparepart Komputer</p>
-                    </div>
-                    <a href="p/greystore/index.html" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
-                </div>
-                <div class="box-portfolio tipe-website">
-                    <img src="assets/img/portfolio/minimalize.JPG" alt="">
-                    <div class="box-portfolio-text">
-                        <h3>Minimalize</h3>
-                        <p>Website Perusahaan Minimalis</p>
-                    </div>
-                    <a href="p/minimalize/index.html" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
-                </div>
-                <div class="box-portfolio tipe-website">
-                    <img src="assets/img/portfolio/hypezone.jpg" alt="">
-                    <div class="box-portfolio-text">
-                        <h3>Hype Zone</h3>
-                        <p>Website Toko Online</p>
-                    </div>
-                    <a href="p/hypezone/index.html" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
-                </div>
-                <div class="box-portfolio tipe-blogger">
-                    <img src="assets/img/portfolio/hobbytekno.JPG" alt="">
-                    <div class="box-portfolio-text">
-                        <h3>HobbyTekno</h3>
-                        <p>Blog Tutorial IT</p>
-                    </div>
-                    <a href="https://hobbytekno.xyz" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
-                </div>
-                <div class="box-portfolio tipe-blogger">
-                    <img src="assets/img/portfolio/vengeantech.JPG" alt="">
-                    <div class="box-portfolio-text">
-                        <h3>Vengeantech</h3>
-                        <p>Blog Tutorial IT</p>
-                    </div>
-                    <a href="https://vengeantech.blogspot.com" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
-                </div>
-                <div class="box-portfolio tipe-blogger">
-                    <img src="assets/img/portfolio/rexusnime.JPG" alt="">
-                    <div class="box-portfolio-text">
-                        <h3>Rexusnime</h3>
-                        <p>Blog Download Anime Batch</p>
-                    </div>
-                    <a href="https://rexusnime.blogspot.com" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
-                </div>
-                <div class="box-portfolio tipe-blogger">
-                    <img src="assets/img/portfolio/sarolangunmagz.JPG" alt="">
-                    <div class=" box-portfolio-text">
-                        <h3>Sarolangun Magz</h3>
-                        <p>Blog Berita Daerah</p>
-                    </div>
-                    <a href="https://sarolangunmagz.blogspot.com" target="_blank" rel="nofollow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <i class="fa fa-eye"></i> View
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Kontak -->
-    <section id="kontak">
+    <!-- Projects -->
+    <section class="projects" id="projects">
         <div class="container">
-            <h1>Kontak</h1>
-            <p>Kontak dan Media Sosial Saya</p>
-            <span class="square"></span>
-            <div class="kontak-menu">
-                <ul>
-                    <a href="https://www.facebook.com/darknessdreamz" target="_blank">
-                        <li> <i class="fab fa-facebook-square"></i> Agrey Tosira</li>
-                    </a>
-                    <a href="https://www.twitter.com/atosira" target="_blank">
-                        <li> <i class="fab fa-twitter"></i> Agrey Tosira</li>
-                    </a>
-                    <a href="https://github.com/agreytosira" target="_blank">
-                        <li> <i class="fab fa-github"></i> Agrey Tosira</li>
-                    </a>
-                    <a href="mailto:agreytosira@gmail.com" target="_blank">
-                        <li> <i class="fa fa-envelope"></i> agreytosira@gmail.com</li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/agrey-tosira-906548195" target="_blank">
-                        <li> <i class="fab fa-linkedin"></i> Agrey Tosira</li>
-                    </a>
-                </ul>
+            <div class="text-center">
+                <h5>MY FEATURED PROJECTS</h5>
+            </div>
+            <div class="row">
+                <div class="col-md-4 projects-box">
+                    <img src="img/greyhosting.jpg" alt="zhosting">
+                    <center>
+                        <h5>GreyHosting</h5>
+                        <a href="p/greyhosting/" class="btn-primary" target="_blank">Visit Site &raquo;</a>
+                    </center>
+                </div>
+                <div class="col-md-4 projects-box">
+                    <img src="img/zhosting.jpg" alt="zhosting">
+                    <center>
+                        <h5>ZHosting</h5>
+                        <a href="p/zhosting/" class="btn-primary" target="_blank">Visit Site &raquo;</a>
+                    </center>
+                </div>
+                <div class="col-md-4 projects-box">
+                    <img src="img/agreydzgn.jpg" alt="zhosting">
+                    <center>
+                        <h5>AgreyDZGN</h5>
+                        <a href="p/agreydzgn/" class="btn-primary" target="_blank">Visit Site &raquo;</a>
+                    </center>
+                </div>
+                <div class="col-md-4 projects-box">
+                    <img src="img/greystore.jpg" alt="zhosting">
+                    <center>
+                        <h5>Grey Store</h5>
+                        <a href="p/greystore/" class="btn-primary" target="_blank">Visit Site &raquo;</a>
+                    </center>
+                </div>
+                <div class="col-md-4 projects-box">
+                    <img src="img/rexusshop.jpg" alt="zhosting">
+                    <center>
+                        <h5>Rexus Shop</h5>
+                        <a href="p/rexusshop/" class="btn-primary" target="_blank">Visit Site &raquo;</a>
+                    </center>
+                </div>
+                <div class="col-md-4 projects-box">
+                    <div class="project-box-special">
+                        <a href="projects.html" class="btn-primary" target="_blank">View More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="text-center">
+                <h5>TESTIMONIALS</h5>
+            </div>
+            <div class="row">
+                <div class="col-md-10 m-auto">
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <div class="col-md-3 testimonials-left">
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div class="col-md-9 testimonials-right">
+                                <h5>Agrey Tosira</h5>
+                                <p>Web Developer</p>
+                                <p><span><q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum aperiam
+                                            quis beatae exercitationem quos debitis similique accusantium ipsa hic eos
+                                            culpa, error quasi perspiciatis expedita pariatur quam facilis nobis aliquid
+                                            nisi minus vel quidem nemo?</q></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h5>CONTACT ME</h5>
+                        <p>Click one of our contacts below to say hello.</p>
+                    </div>
+                    <ul>
+                        <li><a href="mailto:agreytosira@gmail.com"> <i class="fa fa-envelope"></i>
+                                agreytosira@gmail.com</a>
+                        </li>
+                        <li><a href="wa.me/6281356870443"> <i class="fab fa-whatsapp"></i> WhatsApp : +6281356870443</a>
+                        </li>
+                        <li><a href="https://www.instagram.com/agtsra"><i class="fab fa-instagram"></i> @agtsra</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <section id="footer">
-        <hr>
-        <p>Designed with Pure <i class="fab fa-html5"></i> & <i class="fab fa-css3-alt"></i> by <b>Agrey Tosira</b></p>
-    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 footer-left">
+                    <p>Designed by Agrey Tosira</p>
+                </div>
+                <div class="col-md-7 footer-right">
+                    <ul>
+                        <li><a href="#page-top">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery.js"></script>
-    <!-- Custom Script -->
-    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js">
+    </script>
+    <script src="js/script.js"></script>
 
 </body>
 

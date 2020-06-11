@@ -290,6 +290,7 @@ body {
 
     .jumbotron {
         padding: 200px 0px;
+        padding-bottom: 120px;
         background: none;
     }
 
