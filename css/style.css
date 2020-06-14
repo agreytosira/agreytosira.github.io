@@ -160,8 +160,7 @@ p {
 /* About */
 
 .about {
-    padding: 60px 0px;
-    padding-bottom: 60px;
+    padding: 120px 0px;
 }
 
 .about-left h5 {
@@ -174,10 +173,14 @@ p {
     float: right;
 }
 
+.about-left p {
+    line-height: 30px;
+}
+
 /* Services  */
 
 .services {
-    padding: 60px 0px;
+    padding: 120px 0px;
     background: #d6dadd;
 }
 
@@ -188,7 +191,7 @@ p {
 /* Projects */
 
 .projects {
-    padding: 60px 0px;
+    padding: 120px 0px;
 }
 
 .projects h5 {
@@ -197,12 +200,11 @@ p {
 
 .projects img {
     width: 100%;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
 .projects img:hover {
-    transform: translateY(-5px);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -226,7 +228,7 @@ p {
 /* Testimonials */
 
 .testimonials {
-    padding: 50px 0px;
+    padding: 120px 0px;
     background: #d6dadd;
 }
 
@@ -404,5 +406,9 @@ p {
 
     .jumbotron-left h1 {
         font-size: 24px;
+    }
+
+    section {
+        padding: 60px 0px !important;
     }
 }
