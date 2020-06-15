@@ -43,6 +43,10 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+.active {
+    color: #007bff !important;
+}
+
 .btn-primary {
     display: inline-block;
     color: white;
@@ -191,7 +195,7 @@ p {
 }
 
 .product-box {
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -303,8 +307,57 @@ p {
     font-weight: 600;
 }
 
+/* Detail */
+
+.detail-left {
+    padding: 120px 0px;
+}
+
+.detail-left p {
+    line-height: 30px;
+}
+
+.detail-left img {
+    width: 100%;
+}
+
+.detail-right {
+    margin-top: 120px;
+    color: white;
+}
+
+.detail-right span {
+    font-weight: 600;
+    color: #007bff;
+}
+
+hr {
+    background: #707070;
+}
+
 
 @media (max-width:768px) {
+    .jumbotron {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .jumbotron-left h1 {
+        font-size: 28px !important;
+    }
+
+    .jumbotron-left h2 {
+        font-size: 20px !important;
+    }
+
+    .jumbotron-left p {
+        font-size: 12px !important;
+    }
+
+    .jumbotron-right img {
+        margin-top: 30px;
+    }
+
     .navbar-brand img {
         width: 150px;
     }
@@ -312,5 +365,40 @@ p {
     .container {
         padding-left: 15px !important;
         padding-right: 15px !important;
+    }
+
+    .offers {
+        padding: 30px 0px;
+    }
+
+    .catalog {
+        padding: 30px 0px;
+    }
+
+    .services {
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    .services .left-services img {
+        width: 40%;
+    }
+
+    .services .right-services img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .footer-box {
+        margin-top: 20px;
+    }
+
+    .detail-left {
+        padding: 80px 0px;
+        padding-bottom: 40px;
+    }
+
+    .detail-right {
+        margin: 30px 0px;
     }
 }
