@@ -299,6 +299,7 @@ p {
 /* Credit */
 
 .credit {
+    background: #333333;
     padding-top: 20px;
 }
 
@@ -333,6 +334,22 @@ p {
 
 hr {
     background: #707070;
+}
+
+/* Category */
+
+.category {
+    padding: 120px 0px;
+}
+
+.category-header {
+    text-align: center;
+    margin-top: 160px;
+}
+
+.category-header h1 {
+    color: #007bff;
+    font-family: 'Monument', sans-serif;
 }
 
 
