@@ -43,9 +43,6 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-.active {
-    color: #007bff !important;
-}
 
 .btn-primary {
     display: inline-block;
@@ -127,6 +124,11 @@ p {
 
 .navbar-toggler img {
     width: 40px;
+}
+
+
+#aktif {
+    color: #007bff !important;
 }
 
 .nav-link {
@@ -350,6 +352,11 @@ hr {
 .category-header h1 {
     color: #007bff;
     font-family: 'Monument', sans-serif;
+}
+
+.contact-page img {
+    width: 50px;
+    margin-right: 25px;
 }
 
 
