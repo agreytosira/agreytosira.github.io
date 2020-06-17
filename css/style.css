@@ -332,9 +332,21 @@ p {
     align-items: center;
 }
 
+
+.about-page {
+    padding: 60px 0px;
+}
+
 /* Android Breakpoint */
 
 @media (max-width:768px) {
+    .footer {
+        bottom: 0;
+    }
+
+    .page-header {
+        margin-top: 60px;
+    }
 
     .jumbotron-left h3 {
         font-size: 20px;

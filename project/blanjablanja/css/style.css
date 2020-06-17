@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    color: #1c1c1c !important;
+}
+
+h2 {
+    font-size: 36px !important;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px !important;
+}
+
+p {
+    font-size: 16px !important;
+}
+
+.btn-primary {
+    background: #1d9c09;
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    text-decoration: none;
+    background: #107800;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.navbar-brand span {
+    color: #1d9c09;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu li img {
+    width: 35px;
+}
+
+#pemisah {
+    margin: 0px 20px;
+}
+
+.cart {
+    background: #1d9c09;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#user {
+    display: inline-block;
+}
+
+#user img {
+    width: 50px !important;
+    border-radius: 100%;
+}
+
+.wishlist {
+    background: #a5a7af;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#notification {
+    background: #ff8e8e;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#notification::after {
+    content: '';
+    height: 25px;
+    width: 25px;
+    background: #ff4040;
+    position: absolute;
+    border-radius: 100%;
+    top: 3px;
+    right: 180px;
+}
+
+input[type="search"] {
+    width: 408px !important;
+    background: #F7F7F7;
+    border: none;
+}
+
+input[type="search"]::placeholder {
+    color: #A5A7AF;
+    font-size: 16px;
+}
+
+/* Banner */
+
+.banner {
+    margin-top: 20px;
+    padding: 30px 50px;
+    background: #aaff9c;
+    border-radius: 12px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner-right h3 {
+    font-weight: 700;
+}
+
+.banner-right h3 s {
+    font-weight: 600;
+    color: #535353;
+}
+
+.banner-right-text {
+    position: absolute;
+    top: 25% !important;
+}
+
+/* Category */
+
+.category {
+    padding: 45px 0px;
+}
+
+.category h3 {
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.category img {
+    width: 50px;
+}
+
+.category-row {
+    margin: 20px 0px;
+}
+
+.category-row a {
+    color: #1c1c1c;
+}
+
+.category-row a:hover {
+    text-decoration: none;
+}
+
+.category-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 10px 0px;
+    padding-top: 20px;
+    transition: all 0.2s ease;
+    border-radius: 12px;
+}
+
+.category-box p {
+    font-weight: 600;
+}
+
+.category-box:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Popular */
+
+.popular img {
+    width: 216px;
+}
+
+.popular .heading {
+    margin-bottom: 30px;
+}
+
+.popular .heading h3 {
+    font-weight: 700;
+}
+
+.popular-box {
+    border-radius: 12px;
+    background: #f7f7f7;
+    padding: 20px;
+    font-weight: 700;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popular-box h3 {
+    font-weight: 700;
+}
+
+.popular-box h3::before {
+    content: 'Rp';
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.popular-box a img {
+    width: 25px;
+}
+
+.popular .cart {
+    background: #1d9c09;
+    border-radius: 12px;
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+.popular .cart img {
+    width: 35px;
+}
+
+.popular .wishlist {
+    background: #a5a7af;
+    border-radius: 12px;
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 90px;
+}
+
+.popular .wishlist img {
+    width: 32px;
+}
+
+.popular-button {
+    margin-top: 30px;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 30px;
+    padding: 30px 0px;
+    background: #AAFF9C;
+}
+
+.footer h3 {
+    font-weight: 700;
+}
+
+.footer img {
+    margin-right: 15px;
+}
+
+.footer p {
+    line-height: 30px;
+}
+
+/* Android Breakpoint */
+
+@media (max-width:768px) {
+    #search {
+        width: 100% !important;
+    }
+
+    #pemisah {
+        display: none;
+    }
+
+    #notification::after {
+        display: none;
+    }
+
+    .banner {
+        padding: 20px 10px;
+    }
+
+    .banner img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner-left {
+        text-align: center;
+    }
+
+    .banner-right {
+        padding: 0;
+    }
+
+    .banner-right h3 {
+        font-size: 14px !important;
+    }
+
+    .banner-right h2 {
+        font-size: 20px !important;
+    }
+
+    .category-box {
+        margin: 10px 0px;
+    }
+
+    .popular-box {
+        margin: 10px 0px;
+    }
+
+    .footer h3 {
+        margin-top: 20px;
+    }
+
+    .wishlist {
+        margin-bottom: 10px;
+    }
+
+    .popular .cart {
+        margin-bottom: 10px;
+    }
+}
