@@ -199,6 +199,12 @@ section {
 .tools img {
     width: 80px;
     margin: 0px 30px;
+    transition: all 0.2s ease;
+}
+
+.tools img:hover {
+    transform: translateY(-10px);
+    border-radius: 3px;
 }
 
 .tools-box {
