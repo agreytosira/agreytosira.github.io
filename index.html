@@ -2,37 +2,34 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="img/favicon.ico">
     <meta charset="UTF-8">
+    <link rel="icon" href="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrey Tosira - Front-end Web Developer</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Agrey Tosira - Front-end Developer</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body id="page-top">
+<body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="img/logoheader.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#page-top">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" id="link-aktif" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="about.html">About Me</a>
+                    <a class="nav-item nav-link" href="projects.html">My Projects</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -41,217 +38,167 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 jumbotron-left">
-                    <h3>Hi, I'm Agrey Tosira</h3>
+                <div class="col-md-5 jumbotron-left" data-aos="fade-right" data-aos-duration="500">
+                    <h2>Hi, i'm Agrey Tosira</h2>
                     <h1>I am <span id="typed"></span></h1>
                     <p>I’m from Indonesia and I have been working as a Front-end Developer for more than 1 year. Graphic
-                        Design and Web Design is my Hobby until Now. I’ve
-                        been freelancing for the last 1 year, and right now I am looking forward to working with you!
-                    </p>
-                    <a href="#contact" class="btn-primary">Contact Me</a>
-                    <a href="#projects" class="btn-secondary">My Projects</a>
+                        Design and Web Design is my Hobby until Now. I’ve been freelancing for the last 1
+                        year, and
+                        right now I am looking forward to working with you!</p>
+                    <a href="mailto:agreytosira@gmail.com" class="btn-utama"><i class="fa fa-envelope"></i> Email Me</a>
+                    <a href="#" class="btn-biasa"><i class="fa fa-download"></i> Download CV</a>
+                    <a href="#" class="btn-social"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" class="btn-social"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="btn-social"><i class="fab fa-instagram"></i></a>
                 </div>
+                <div class="col-md-1"></div>
                 <div class="col-md-6 jumbotron-right">
-                    <img src="img/jumbotron.png" alt="">
+                    <center>
+                        <img src="img/vector.png" alt="">
+                    </center>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 about-left">
-                    <h5>ABOUT ME</h5>
-                    <p>My Name is Agrey Tosira, I live in Jambi, Indonesia. I am Front-end Developer
-                        and Graphic Designer. If you need a website you can contact me.
-                        I'll make a Cheap Website with Premium Quality for you.</p>
-                    <a href="#contact" class="btn-primary">Contact Me</a>
-                </div>
-                <div class="col-md-6 about-right">
-                    <img src="img/about.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center mb-5 d-block">
-                        <h5>SERVICES</h5>
-                        <p>I can provide websites of your needs, such as:</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <center>
-                                <img src="img/company.png" alt="">
-                                <p>Company Profile</p>
-                            </center>
-                        </div>
-                        <div class="col-md-3">
-                            <center>
-                                <img src="img/personal.png" alt="">
-                                <p>Personal Website</p>
-                            </center>
-                        </div>
-                        <div class="col-md-3">
-                            <center>
-                                <img src="img/shop.png" alt="">
-                                <p>Online Shop</p>
-                            </center>
-                        </div>
-                        <div class="col-md-3">
-                            <center>
-                                <img src="img/more.png" alt="">
-                                <p>And Many More</p>
-                            </center>
-                        </div>
-                    </div>
-                    <div class="text-center mt-5">
-                        <a href="#contact" class="btn-primary">Contact Me</a>
-                        <a href="#projects" class="btn-secondary">My Projects</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
+    <!-- Featured Projects -->
     <section class="projects" id="projects">
         <div class="container">
-            <div class="text-center">
-                <h5>MY FEATURED PROJECTS</h5>
+            <div class="row">
+                <div class="col-md-12 section-heading">
+                    <h1>Featured Projects</h1>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-4 projects-box">
-                    <img src="img/portfolio/agtsramerch.jpg" alt="agtsramerch">
-                    <center>
-                        <h5>AGTSRA Merch</h5>
-                        <a href="project/agtsramerch/" class="btn-primary" target="_blank">Visit Site &raquo;</a>
-                    </center>
+                <div class="col-md-6">
+                    <div class="project-box" data-aos="fade-up" data-aos-offset=150>
+                        <img src="porfolio/" alt="">
+                        <h2>Coming Soon</h2>
+                        <a href="#" class="btn-biasa"><i class="fas fa-eye"></i> View Project</a>
+                        <a href="#" class="btn-biasa"><i class="fa fa-file-alt"></i> Project Details</a>
+                    </div>
                 </div>
-                <div class="col-md-4 projects-box">
-                    <img src="img/portfolio/blanjablanja.JPG" alt="blanjablanja">
-                    <center>
-                        <h5>Blanjablanja</h5>
-                        <a href="project/blanjablanja/" class="btn-primary" target="_blank">Visit Site &raquo;</a>
-                    </center>
+                <div class="col-md-6">
+                    <div class="project-box" data-aos="fade-up" data-aos-offset=150>
+                        <img src="porfolio/" alt="">
+                        <h2>Coming Soon</h2>
+                        <a href="#" class="btn-biasa"><i class="fas fa-eye"></i> View Project</a>
+                        <a href="#" class="btn-biasa"><i class="fa fa-file-alt"></i> Project Details</a>
+                    </div>
                 </div>
-                <div class="col-md-4 projects-box">
-                    <img src="img/portfolio/greyhosting.jpg" alt="zhosting">
-                    <center>
-                        <h5>GreyHosting</h5>
-                        <a href="project/greyhosting/" class="btn-primary" target="_blank">Visit Site &raquo;</a>
-                    </center>
+                <div class="col-md-6">
+                    <div class="project-box" data-aos="fade-up">
+                        <img src="porfolio/" alt="">
+                        <h2>Coming Soon</h2>
+                        <a href="#" class="btn-biasa"><i class="fas fa-eye"></i> View Project</a>
+                        <a href="#" class="btn-biasa"><i class="fa fa-file-alt"></i> Project Details</a>
+                    </div>
                 </div>
-                <div class="col-md-4 projects-box">
-                    <img src="img/portfolio/zhosting.jpg" alt="zhosting">
-                    <center>
-                        <h5>ZHosting</h5>
-                        <a href="project/zhosting/" class="btn-primary" target="_blank">Visit Site &raquo;</a>
-                    </center>
-                </div>
-                <div class="col-md-4 projects-box">
-                    <img src="img/portfolio/rexusshop.jpg" alt="zhosting">
-                    <center>
-                        <h5>Rexus Shop</h5>
-                        <a href="project/rexusshop/" class="btn-primary" target="_blank">Visit Site &raquo;</a>
-                    </center>
-                </div>
-                <div class="col-md-4 projects-box">
-                    <div class="project-box-special">
-                        <a href="projects.html" class="btn-primary" target="_blank">View More &raquo;</a>
+                <div class="col-md-6">
+                    <div class="project-box" data-aos="fade-up">
+                        <img src="porfolio/" alt="">
+                        <h2>Coming Soon</h2>
+                        <a href="#" class="btn-biasa"><i class="fas fa-eye"></i> View Project</a>
+                        <a href="#" class="btn-biasa"><i class="fa fa-file-alt"></i> Project Details</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <!-- <section class="testimonials" id="testimonials">
+    <!-- Offers -->
+    <section class="offers" id="offers">
         <div class="container">
-            <div class="text-center">
-                <h5>TESTIMONIALS</h5>
-            </div>
             <div class="row">
-                <div class="col-md-10 m-auto">
-                    <div class="testimonials-box">
+                <div class="col-md-12">
+                    <div class="offers-box">
                         <div class="row">
-                            <div class="col-md-3 testimonials-left">
-                                <img src="img/profile.png" alt="">
+                            <div class="col-md-8">
+                                <h2>Interested working with me?</h2>
                             </div>
-                            <div class="col-md-9 testimonials-right">
-                                <h5>Client</h5>
-                                <p>CEO of Company</p>
-                                <p><span><q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum aperiam
-                                            quis beatae exercitationem quos debitis similique accusantium ipsa hic eos
-                                            culpa, error quasi perspiciatis expedita pariatur quam facilis nobis aliquid
-                                            nisi minus vel quidem nemo?</q></span></p>
+                            <div class="col-md-4">
+                                <a href="projects.html" class="btn-cadangan">See More Projects</a>
+                                <a href="mailto:agreytosira@gmail.com" class="btn-utama">Email Me</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
+    <!-- Tools and Skills -->
+    <section class="tools" id="tools">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <h5>CONTACT ME</h5>
-                        <p>Click one of my contacts below</p>
-                    </div>
-                    <ul>
-                        <li><a href="mailto:agreytosira@gmail.com"> <i class="fa fa-envelope"></i>
-                                agreytosira@gmail.com</a>
-                        </li>
-                        <li><a href="http://wa.me/6281356870443"> <i class="fab fa-whatsapp"></i> WhatsApp :
-                                +6281356870443</a>
-                        </li>
-                        <li><a href="https://www.instagram.com/agtsra"><i class="fab fa-instagram"></i> @agtsra</a></li>
-                    </ul>
+                <div class="col-md-12 section-heading">
+                    <h1>Tools and Skills</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 tools-box">
+                    <center>
+                        <img src="img/skill1.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Adobe XD">
+                        <img src="img/skill2.png" alt="" data-toggle="tooltip" data-placement="bottom"
+                            title="Adobe Illustrator">
+                        <img src="img/skill3.png" alt="" data-toggle="tooltip" data-placement="bottom"
+                            title="Adobe Photoshop">
+                        <img src="img/skill4.png" alt="" data-toggle="tooltip" data-placement="bottom" title="HTML5">
+                        <img src="img/skill5.png" alt="" data-toggle="tooltip" data-placement="bottom" title="CSS3">
+                        <img src="img/skill6.png" alt="" data-toggle="tooltip" data-placement="bottom"
+                            title="Javascript">
+                        <img src="img/skill7.png" alt="" data-toggle="tooltip" data-placement="bottom" title="jQuery">
+                    </center>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
+
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 footer-left">
-                    <p>Designed by Agrey Tosira</p>
-                </div>
-                <div class="col-md-7 footer-right">
+                <div class="col-md-4">
+                    <h3>Social Media</h3>
                     <ul>
-                        <li><a href="#page-top">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://twitter.com/atosira"><i class="fab fa-twitter"></i> @ATosira</a></li>
+                        <li><a href="https://instagram.com/agreytosira"><i class="fab fa-instagram"></i> @agtsra</a>
+                        </li>
+                        <li><a href="https://facebok.com/darknessdreamz"><i class="fab fa-facebook"></i> AGREY
+                                TOSIRA</a></li>
+                        <li><a href="https://github.com/agreytosira"><i class="fab fa-github"></i> agreytosira</a></li>
+                        <li><a href="https://dribbble.com/agreytosira"><i class="fab fa-dribbble"></i> Agrey Tosira</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">My Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Get in touch</h3>
+                    <ul>
+                        <p>For business inquiry please send email to
+                            <a href="mailto:agreytosira@gmail.com">agreytosira@gmail.com</a></p>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js">
-    </script>
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
 </body>
 
