@@ -211,6 +211,16 @@ section {
     margin-top: 60px;
 }
 
+/* About Me */
+
+.aboutme h1 {
+    margin-bottom: 60px;
+}
+
+.aboutme p {
+    line-height: 30px;
+}
+
 /* Footer */
 
 .footer {
@@ -258,6 +268,10 @@ section {
 
     .navbar .nav-item {
         padding: 10px 20px !important;
+    }
+
+    .nav-link::after {
+        margin: 0px !important;
     }
 
     section {
@@ -323,5 +337,13 @@ section {
 
     .tools img {
         margin-top: 20px;
+    }
+
+    #projects {
+        margin-top: 120px !important;
+    }
+
+    #aboutme {
+        margin-top: 120px !important;
     }
 }
