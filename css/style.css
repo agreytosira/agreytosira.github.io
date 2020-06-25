@@ -383,4 +383,8 @@ section {
     .details {
         margin-top: 100px !important;
     }
+
+    .navbar {
+        background: #004c9e !important;
+    }
 }
