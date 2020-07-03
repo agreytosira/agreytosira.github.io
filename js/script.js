@@ -22,7 +22,7 @@ window.onscroll = function () {
 
 $('document').ready(function () {
     var typed = new Typed('#typed', {
-        strings: ["Front-end Dev", "Graphic Designer", "Freelancer"],
+        strings: ["Front-end Dev", "Graphic Designer", "Freelancer", "UI/UX Designer"],
         backSpeed: 10,
         typeSpeed: 40,
         loop: true
