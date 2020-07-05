@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  color: #1c1c1c !important;
+}
+
+.btn-primary {
+  font-weight: 500 !important;
+  padding: 10px 32px !important;
+  border-radius: 50px !important;
+  text-transform: uppercase;
+}
+
+.icon {
+  width: 16px !important;
+  margin-left: 10px !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: bold !important;
+  font-size: 50px !important;
+}
+
+h3 {
+  font-size: 30px !important;
+  font-weight: 500 !important;
+}
+
+h4 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+
+h5 {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+
+.aktif .nav-link {
+  color: #007bff !important;
+  font-weight: 700;
+}
+
+.contact-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 5px 0px;
+  position: fixed;
+  z-index: 99999;
+  height: 40px;
+}
+
+.contact-nav p {
+  display: inline-block;
+  margin: 0px 20px;
+  margin-left: 0px;
+  font-size: 16px;
+}
+
+.contact-nav img {
+  width: 16px;
+}
+
+nav.navbar {
+  width: 100%;
+  margin-top: 40px;
+  position: fixed;
+  background: #1c1c1c;
+  z-index: 99999;
+}
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  padding: 0px 15px !important;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.navbar-brand img {
+  width: 200px;
+}
+
+.jumbotron {
+  background: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  height: 628px;
+  color: white;
+}
+
+.jumbotron-content {
+  margin-top: 200px;
+}
+
+.jumbotron-content h1 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+  margin-bottom: 20px;
+}
+
+.jumbotron-content h5 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+  margin-bottom: 20px;
+}
+
+.heading-section {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.heading-section h3::after {
+  margin: auto;
+  display: block;
+  content: '';
+  margin-top: 20px;
+  width: 168px;
+  background-color: #007bff;
+  height: 2px;
+  border-radius: 20px;
+}
+
+/* Recommended */
+.recommended {
+  padding: 60px 0px;
+}
+
+.place-box {
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.place-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.place-box h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.place-box p {
+  line-height: 30px;
+}
+
+.more-place {
+  padding-top: 120px;
+}
+
+/* Other */
+.more-place {
+  padding-bottom: 60px;
+}
+
+/* More Place Page */
+
+.more-place-page {
+  padding-top: 160px;
+}
+
+.more-place-box h4 {
+  display: inline-block;
+}
+
+.btn-secondary {
+  padding: 0 !important;
+  background: none !important;
+  color: #1c1c1c !important;
+  border: none !important;
+  float: right;
+  padding: 15px !important;
+  padding-right: 20px !important;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  opacity: 0.7;
+}
+
+/* Contact */
+.contact {
+  background: url(../img/banner.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h2 {
+  margin-bottom: 40px;
+}
+
+.footer {
+  color: white;
+  padding: 50px;
+  padding-bottom: 20px;
+  background: #111111;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footer h5 {
+  font-weight: bold !important;
+  color: #007bff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.sosmed {
+  padding: 0px 7px;
+  transition: all 0.2s ease;
+}
+
+.sosmed:hover {
+  opacity: 0.7;
+}
+
+.sosmed img {
+  width: 40px;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.footer hr {
+  margin-top: 30px;
+  background: #707070;
+}
+
+/* About Us Page */
+
+.about-us {
+  padding-top: 150px;
+  padding-bottom: 60px;
+}
+
+.about-us p {
+  line-height: 30px;
+}
+
+/* Contact Us Page */
+
+.contact-us {
+  padding-top: 150px;
+  padding-bottom: 60px;
+}
+
+.contact-us input[type="text"] {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.contact-us textarea {
+  width: 100%;
+  height: 150px !important;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.contact-us .btn-primary {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* Responsive Breakpoint */
+
+@media (max-width:768px) {
+  .jumbotron {
+    height: 640px;
+  }
+
+  .place-box img {
+    margin-bottom: 20px;
+  }
+
+  .mobile-img {
+    display: block;
+  }
+
+  .desktop-img img {
+    display: none;
+  }
+
+  .contact-nav {
+    text-align: center;
+
+  }
+
+  .contact-nav p {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+
+  .nav-item {
+    padding: 15px 0px;
+  }
+
+  h1 {
+    font-size: 40px !important;
+  }
+
+  h2 {
+    font-size: 30px !important;
+  }
+
+  h3 {
+    font-size: 24px !important;
+  }
+
+  h5 {
+    font-size: 18px !important;
+  }
+
+  .icon {
+    margin: 0 !important;
+    margin-left: 10px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .footer h5 {
+    margin-top: 30px;
+  }
+
+  .sosmed img {
+    margin-top: 10px;
+  }
+
+  .more-place-page h4 {
+    font-size: 18px !important;
+  }
+
+  .more-place-page img {
+    margin-bottom: 0px;
+  }
+
+
+  .more-place-list {
+    margin-bottom: 20px;
+  }
+}
