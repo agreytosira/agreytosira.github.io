@@ -138,7 +138,7 @@ section {
 
 .jumbotron {
     padding: 160px 0px !important;
-    background: linear-gradient(#002752, #0051a8);
+    background: linear-gradient(180deg, #282828, #0051a8);
     background-size: cover;
     background-position: center;
 }
