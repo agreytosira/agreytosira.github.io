@@ -137,9 +137,8 @@ section {
 }
 
 .jumbotron {
-    padding: 200px 0px !important;
-    background-color: #282828 !important;
-    background: url(../img/background-header.png);
+    padding: 160px 0px !important;
+    background: linear-gradient(#002752, #0051a8);
     background-size: cover;
     background-position: center;
 }
@@ -296,9 +295,17 @@ section {
     color: #ffcc00;
 }
 
+.jumbotron-socmed {
+    margin-top: 30px;
+}
+
 /* Responsive Android */
 
 @media (max-width:768px) {
+
+    .offers-box h2 {
+        text-align: center;
+    }
 
     .navbar .nav-item {
         padding: 10px 20px !important;
@@ -313,7 +320,12 @@ section {
     }
 
     .jumbotron {
-        padding: 100px 0px !important;
+        padding: 120px 0px !important;
+        padding-top: 160px !important;
+    }
+
+    .jumbotron-socmed {
+        margin-top: 0px !important;
     }
 
     .jumbotron-left {
