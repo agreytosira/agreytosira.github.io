@@ -401,3 +401,9 @@ section {
         background: #004c9e !important;
     }
 }
+
+@media (min-width:320px) {
+    .jumbotron {
+        padding-top: 120px !important;
+    }
+}
