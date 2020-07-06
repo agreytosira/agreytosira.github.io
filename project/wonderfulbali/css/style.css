@@ -48,6 +48,7 @@ h5 {
 }
 
 .contact-nav {
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   width: 100%;
@@ -71,6 +72,7 @@ h5 {
 }
 
 nav.navbar {
+  transition: all 0.2s ease;
   width: 100%;
   margin-top: 40px;
   position: fixed;
