@@ -35,6 +35,16 @@ $('document').ready(function () {
 $('document').ready(function () {
     // Project Button
 
+    $('.button-all').click(function () {
+        $('.webdesign').show('slow');
+        $('.mobileappdesign').show('slow');
+        $('.posterdesign').show('slow');
+        $('.logodesign').show('slow');
+        $('.fbcoverdesign').show('slow');
+        $('.tshirtdesign').show('slow');
+        $('.pricelistdesign').show('slow');
+    })
+
     $('.button-webdesign').click(function () {
         $('.webdesign').show('slow');
         $('.mobileappdesign').hide('slow');
