@@ -99,6 +99,14 @@ section {
     text-decoration: none;
 }
 
+.webdesign {
+    transition: all 0.5s ease;
+}
+
+.mobiledesign {
+    transition: all 0.5s ease;
+}
+
 /* Navbar */
 
 .navbar {
@@ -158,6 +166,25 @@ section {
 
 /* Project */
 
+.project-menu button {
+    background: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease;
+    margin: 0px 10px;
+    display: inline-block;
+}
+
+.project-menu button:focus {
+    border-bottom: 2px solid #007bff;
+}
+
+.project-menu button:hover {
+    color: #007bff !important;
+}
+
 .project-box {
     margin-top: 60px;
 }
@@ -165,6 +192,11 @@ section {
 .project-box img {
     width: 100%;
     border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.project-box img:hover {
+    opacity: 0.7;
 }
 
 .project-box .btn-biasa {
@@ -172,8 +204,9 @@ section {
 }
 
 .project-box h2 {
+    font-size: 18px !important;
     color: #ffcc00;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     margin-top: 15px;
 }
 
@@ -302,6 +335,19 @@ section {
 /* Responsive Android */
 
 @media (max-width:768px) {
+
+    .project-menu button {
+        font-size: 12px;
+        width: 100%;
+        padding: 10px 0px;
+        margin: 5px 0px;
+        display: block !important;
+        background: #00438b;
+    }
+
+    .project-menu button:focus {
+        color: #ffcc00 !important;
+    }
 
     .offers-box h2 {
         text-align: center;
