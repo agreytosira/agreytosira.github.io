@@ -227,6 +227,10 @@ section {
     margin-bottom: 30px !important;
 }
 
+.details h3 {
+    font-weight: 600 !important;
+}
+
 .details span {
     font-weight: bold;
     color: #007bff;
