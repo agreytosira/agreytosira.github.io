@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Inter', sans-serif !important;
-    background: #282828 !important;
+    background: #101010 !important;
     color: #fff !important;
 }
 
@@ -146,9 +146,7 @@ section {
 
 .jumbotron {
     padding: 160px 0px !important;
-    background: linear-gradient(180deg, #282828, #0051a8);
-    background-size: cover;
-    background-position: center;
+    background: #101010 !important;
 }
 
 .jumbotron-right img {
@@ -165,6 +163,10 @@ section {
 }
 
 /* Project */
+
+.projects {
+    background :#1A1A1A !important;
+}
 
 .project-menu button {
     background: none;
@@ -212,6 +214,10 @@ section {
 
 /* Details */
 
+.details {
+    background: #1A1A1A !important;
+}
+
 .details a {
     color: white;
     transition: all 0.2s ease;
@@ -248,6 +254,10 @@ section {
 }
 
 /* Offers */
+
+.offers {
+    background: #101010 !important;
+}
 
 .offers-box {
     background-color: #3A3A3A;
@@ -298,7 +308,7 @@ section {
 /* Footer */
 
 .footer {
-    background: #101010;
+    background: #101010 !important;
     padding: 60px 0px;
 }
 
@@ -449,11 +459,11 @@ section {
     }
 
     .details {
-        margin-top: 100px !important;
+        padding-top: 100px !important;
     }
 
     .navbar {
-        background: #004c9e !important;
+        background: #101010 !important;
     }
 }
 
