@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 40px !important;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px !important;
+  margin: 0px;
+}
+
+.intro-image img {
+  height: 500px;
+}
+
+.btn-primary {
+  text-transform: uppercase;
+  display: inline-block;
+  background: white;
+  color: #1c1c1c !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700;
+  padding: 16px 35px !important;
+  border-radius: 50px;
+}
+
+.btn-primary:hover {
+  text-transform: uppercase;
+  display: inline-block;
+  background: white;
+  color: #1c1c1c !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700;
+  padding: 16px 35px !important;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  text-transform: uppercase;
+  display: inline-block;
+  background: none;
+  color: #1c1c1c !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700;
+  padding: 16px 35px !important;
+  border-radius: 50px;
+  border: 2px solid #1c1c1c;
+}
+
+.btn-secondary:hover {
+  background: none;
+  color: #1c1c1c !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: 50px;
+  border: 2px solid #1c1c1c;
+  text-decoration: none;
+}
+
+/* Contact Nav */
+
+.contact-nav {
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #d68800;
+  color: white;
+  padding: 5px 0px;
+  position: fixed;
+  z-index: 99999;
+  height: 40px;
+}
+
+.contact-nav p {
+  display: inline-block;
+  margin: 0px 20px;
+  margin-left: 0px;
+  font-size: 16px;
+}
+
+.contact-nav img {
+  width: 16px;
+}
+
+/* Navigation Bar */
+
+nav.navbar {
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 40px;
+  position: fixed;
+  z-index: 99999;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.nav-link {
+  padding: 0px 25px !important;
+  text-transform: uppercase;
+  color: #fff !important;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand img {
+  width: 250px;
+}
+
+/* Jumbotron */
+
+.jumbotron h1 {
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  color: white !important;
+  background: url(../img/jumbotron.jpg);
+  height: 738px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Intro Section */
+
+.intro {
+  padding: 60px 0px;
+}
+
+.intro-box p {
+  margin-bottom: 20px;
+}
+
+.intro-box {
+  padding: 100px 0px;
+  background: url(../img/dish.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  overflow: hidden;
+}
+
+.intro-details {
+  background: white;
+  padding: 50px 50px;
+  margin-left: 550px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Intro Section */
+
+.place {
+  padding: 120px 0px;
+}
+
+.place-box {
+  padding: 100px 0px;
+  background: url(../img/interior.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  height: 612px;
+}
+
+.place-details {
+  text-align: center;
+  background: white;
+  margin: auto;
+  left: 25%;
+  margin-top: -80px !important;
+  position: absolute;
+  z-index: 50;
+  padding: 50px 50px;
+  box-shadow: 0px -8px 60px 0px rgba(0, 0, 0, 0.2);
+}
