@@ -25,7 +25,7 @@ $('document').ready(function () {
     // Typed.js
 
     var typed = new Typed('#typed', {
-        strings: ["Front-end Dev", "Graphic Designer", "Freelancer", "UI/UX Designer"],
+        strings: ["Front-end Dev", "Graphic Designer", "UI/UX Designer", "Freelancer"],
         backSpeed: 10,
         typeSpeed: 40,
         loop: true
