@@ -9,17 +9,12 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
 </head>
 
-<body>
-
-  <!-- Contact Navigation -->
-  <div class="contact-nav" id="contact-nav">
-    <div class="container">
-      <p> <img src="img/phone.png" alt=""> 0813-5678-9012</p>
-      <p>cs@luxuryresto.co.id</p>
-    </div>
-  </div>
+<body id="page-top">
 
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
@@ -32,13 +27,22 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item aktif">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#page-top">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="#intro">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#place">Place</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#location">Contact</a>
           </li>
         </ul>
       </div>
@@ -60,7 +64,7 @@
   </div>
 
   <!-- Introduction Section -->
-  <section class="intro">
+  <section class="intro" id="intro">
     <div class="container">
       <div class="row">
         <div class="col-md-12 intro-box">
@@ -77,10 +81,10 @@
   </section>
 
   <!-- Place Section -->
-  <section class="place">
+  <section class="place" id="place">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 m-auto place-details">
+        <div class="col-md-6 place-details">
           <h1>LUXURY PLACE</h1>
           <p>Enjoy Luxury Interior in our Restaurant. <br>
             High Class Place for you who loves luxury.</p>
@@ -94,19 +98,98 @@
   </section>
 
   <!-- Featured Menu -->
-  <section class="featured-menu">
-    <div class="row">
-      <div class="col-md-12">
-
+  <section class="featured-menu" id="menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>OUR FEATURED MENU</h1>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5"> <img src="img/menu1.jpg" alt=""> </div>
+            <div class="col-md-5"><img src="img/menu1.jpg" alt=""> </div>
+            <div class="col-md-1"></div>
+          </div>
+          <a href="#" class="btn-secondary mt-3">See All Menu</a>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>OUR GALLERY</h1>
+          <div class="row mt-5">
+            <div class="col-6 col-md-4 gallery-image"> <img src="img/1.jpg"> </div>
+            <div class="col-6 col-md-4 gallery-image"><img src="img/2.jpg"> </div>
+            <div class="col-6 col-md-4 gallery-image"><img src="img/3.jpg"> </div>
+            <div class="col-6 col-md-4 gallery-image"> <img src="img/4.jpg"> </div>
+            <div class="col-6 col-md-4 gallery-image"><img src="img/5.jpg"> </div>
+            <div class="col-6 col-md-4 gallery-image"><img src="img/6.jpg"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="location" id="location">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 location-image">
+          <div class="location-details">
+            <h1>OUR LOCATION</h1>
+            <p>Visit us on Jl Raya Rawakuning RT 16/02, Dki Jakarta, <br>
+              Jakarta 13950</p>
+            <a href="#" class="btn-secondary"> <i class="fa fa-envelope"></i> EMAIL US</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script src="js/script.js">
+  <footer class="footer footer-logo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-content">
+          <center><img src="img/logoWhite.png" alt=""></center>
+        </div>
+        <div class="col-md-4 footer-content">
+          <h5>VISIT US</h5>
+          <p>Jl Raya Rawakuning RT 16/02, Dki Jakarta, <br>
+            Jakarta 13950</p>
+        </div>
+        <div class="col-md-4 footer-content">
+          <h5>OPENING HOURS</h5>
+          <p>Sunday - Thursday , 10AM - 11PM <br>
+            Friday - Saturday, 10AM - 12PM</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section class="credit">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 credit-content-left">
+          <p>Copyright Luxury Restaurant - 2015 - 2020</p>
+        </div>
+        <div class="col-md-6 credit-content-right">
+          <p>Designed by <b>Agrey Tosira</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+      speedAsDuration: true
+    });
   </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+  </script>
+  <script src="js/script.js">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
   </script>

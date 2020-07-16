@@ -9,6 +9,12 @@ h1 {
   font-weight: 700;
 }
 
+h5 {
+  font-size: 24px !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+}
+
 p {
   font-family: 'Roboto', sans-serif !important;
   font-size: 16px !important;
@@ -28,13 +34,14 @@ p {
   font-weight: 700;
   padding: 16px 35px !important;
   border-radius: 50px;
+  transition: all 0.2s ease;
 }
 
 .btn-primary:hover {
   text-transform: uppercase;
   display: inline-block;
-  background: white;
-  color: #1c1c1c !important;
+  background: #d68800;
+  color: #fff !important;
   font-family: 'Poppins', sans-serif !important;
   font-weight: 700;
   padding: 16px 35px !important;
@@ -65,38 +72,9 @@ p {
   text-decoration: none;
 }
 
-/* Contact Nav */
-
-.contact-nav {
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background: #d68800;
-  color: white;
-  padding: 5px 0px;
-  position: fixed;
-  z-index: 99999;
-  height: 40px;
-}
-
-.contact-nav p {
-  display: inline-block;
-  margin: 0px 20px;
-  margin-left: 0px;
-  font-size: 16px;
-}
-
-.contact-nav img {
-  width: 16px;
-}
-
-/* Navigation Bar */
-
 nav.navbar {
   transition: all 0.2s ease;
   width: 100%;
-  margin-top: 40px;
   position: fixed;
   z-index: 99999;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
@@ -108,10 +86,15 @@ nav.navbar {
   color: #fff !important;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #d68800 !important;
 }
 
 .navbar-brand img {
-  width: 250px;
+  width: 200px;
 }
 
 /* Jumbotron */
@@ -120,9 +103,18 @@ nav.navbar {
   text-transform: uppercase;
 }
 
+
+.jumbotron p {
+  margin-bottom: 20px;
+}
+
 .jumbotron {
+
   color: white !important;
   background: url(../img/jumbotron.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 738px;
   display: flex;
   justify-content: center;
@@ -181,4 +173,196 @@ nav.navbar {
   z-index: 50;
   padding: 50px 50px;
   box-shadow: 0px -8px 60px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Featured Menu */
+
+.featured-menu {
+  padding: 60px;
+}
+
+.featured-menu img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Gallery */
+
+.gallery {
+  padding: 60px 0px;
+}
+
+.gallery-image {
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Location */
+
+.location {
+  padding: 60px 0px;
+}
+
+.location-image {
+  background: url('../img/maps.jpg');
+  background-size: 83%;
+  height: 610px;
+  background-repeat: no-repeat;
+}
+
+.location-details {
+  margin-top: 125px;
+  margin-left: 600px;
+  background: white;
+  padding: 75px 50px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.location-details img {
+  width: 16px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+.location-details p {
+  margin-bottom: 20px;
+}
+
+.location-details i {
+  margin-right: 5px;
+}
+
+/* Footer */
+
+.footer {
+  color: #fff;
+  background: #2b2b2b;
+  padding: 75px 0px;
+}
+
+.footer img {
+  width: 276px;
+}
+
+/* Credit */
+
+.credit {
+  padding: 10px 0px;
+  background: #171717;
+  color: #c1c1c1;
+}
+
+.credit-content-right {
+  text-align: right;
+}
+
+@media (max-width:768px) {
+
+  .navbar-brand img {
+    width: 150px;
+  }
+
+  nav.navbar {
+    background: #171717;
+  }
+
+  .nav-link {
+    font-size: 14px !important;
+    padding: 10px 0px !important;
+    padding-left: 20px !important;
+  }
+
+  .nav-link:hover {
+    background: #d68800;
+    color: white !important;
+  }
+
+  h1 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 12px !important;
+  }
+
+  .btn-primary {
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+  }
+
+  .btn-secondary {
+    font-size: 12px !important;
+    padding: 6px 15px !important;
+  }
+
+  .jumbotron {
+    text-align: center;
+    height: 538px;
+    background-attachment: fixed;
+    background-position: left center !important;
+    background-size: 100% cover;
+  }
+
+  .intro {
+    padding: 30px 0px !important;
+  }
+
+  .place {
+    padding: 0px !important
+  }
+
+  .location {
+    padding: 0px !important;
+  }
+
+  .place-box {
+    padding: 0px !important;
+  }
+
+  .intro-box {
+    text-align: center;
+    padding: 30px 0px !important;
+  }
+
+  .intro-box {
+    background-size: 100%;
+  }
+
+  .intro-details {
+    margin-left: 0px;
+  }
+
+  .place-details {
+    margin-top: 50px !important;
+    left: 0;
+  }
+
+  .location-details {
+    margin-left: 0px;
+  }
+
+  .location-image {
+    background-size: 100%;
+  }
+
+  .footer-logo img {
+    width: 225px;
+  }
+
+  .footer-content {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .credit {
+    text-align: center !important;
+  }
+
+  .credit-content-right {
+    text-align: center;
+  }
 }

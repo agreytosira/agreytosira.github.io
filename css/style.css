@@ -164,27 +164,40 @@ section {
 
 /* Project */
 
+.ui-details {
+    width: 50% !important;
+}
+
 .projects {
-    background :#1A1A1A !important;
+    background: #1A1A1A !important;
 }
 
 .project-menu button {
+    font-weight: 600;
     background: none;
-    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 50px;
+    color: #fff;
     font-family: 'Inter', sans-serif;
-    border: none;
     outline: none;
     transition: all 0.2s ease;
-    margin: 0px 10px;
+    margin: 0px 3px;
     display: inline-block;
 }
 
 .project-menu button:focus {
-    border-bottom: 2px solid #007bff;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff;
 }
 
 .project-menu button:hover {
-    color: #007bff !important;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 89, 255, 0.6);
 }
 
 .project-box {
@@ -244,7 +257,7 @@ section {
 
 .details img {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     border-radius: 12px;
 }
 
@@ -355,6 +368,10 @@ section {
 
 @media (max-width:768px) {
 
+    .ui-details {
+        width: 100% !important;
+    }
+
     .project-menu button {
         font-size: 12px;
         width: 100%;
@@ -435,7 +452,6 @@ section {
     }
 
     .offers .btn-utama {
-        margin-top: 20px;
         text-align: center;
         display: block !important;
     }
