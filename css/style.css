@@ -272,6 +272,10 @@ section {
     margin-bottom: 60px;
 }
 
+.hire-list {
+    margin-top: 60px;
+}
+
 .hire {
     padding: 120px 0px;
 }
@@ -295,7 +299,7 @@ section {
 }
 
 .offers-box {
-    background-color: #3A3A3A;
+    background-color: #1A1A1A;
     padding: 60px;
     border-radius: 12px;
 }
@@ -386,9 +390,19 @@ section {
     margin-top: 30px;
 }
 
+/* Blog */
+
+.blog .section-heading {
+    margin-bottom: 60px;
+}
+
 /* Responsive Android */
 
 @media (max-width:768px) {
+
+    .blog {
+        display: none;
+    }
 
     .project-menu button {
         font-size: 12px;
@@ -470,14 +484,20 @@ section {
     }
 
     .offers .btn-utama {
+        margin-top: 20px;
         text-align: center;
         display: block !important;
     }
 
     .offers .btn-cadangan {
+        font-size: 14px;
         text-align: center;
         margin-top: 20px;
         display: block !important;
+    }
+
+    .tools {
+        padding: 60px 0px;
     }
 
     .tools img {
@@ -498,6 +518,32 @@ section {
 
     .navbar {
         background: #101010 !important;
+    }
+
+    .hire .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .hire {
+        padding: 60px 0px;
+    }
+
+    .hire-list {
+        margin-top: 10px !important;
+        text-align: center;
+    }
+
+    .hire-list h2 {
+        margin-top: 20px;
+        font-size: 20px !important;
+    }
+
+    .hire-list img {
+        width: 40%;
+    }
+
+    .footer h3 {
+        margin-top: 30px;
     }
 }
 
