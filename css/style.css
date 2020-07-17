@@ -165,7 +165,7 @@ section {
 /* Project */
 
 .ui-details {
-    width: 50% !important;
+    width: 60% !important;
 }
 
 .projects {
@@ -264,6 +264,28 @@ section {
 .detail-text {
     margin: auto;
     width: 80% !important;
+}
+
+/* Why Hire Me */
+
+.hire .section-heading {
+    margin-bottom: 60px;
+}
+
+.hire {
+    padding: 120px 0px;
+}
+
+.hire-list img {
+    width: 100%;
+}
+
+.hire-list h2 {
+    font-size: 24px !important;
+}
+
+.hire-list p {
+    font-size: 14px !important;
 }
 
 /* Offers */
@@ -367,10 +389,6 @@ section {
 /* Responsive Android */
 
 @media (max-width:768px) {
-
-    .ui-details {
-        width: 100% !important;
-    }
 
     .project-menu button {
         font-size: 12px;
