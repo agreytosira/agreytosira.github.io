@@ -117,3 +117,12 @@ $('document').ready(function () {
         $('.pricelistdesign').hide('slow');
     });
 })
+
+//Script Redirect CTRL + U
+function redirectCU(e) {
+    if (e.ctrlKey && e.which == 85) {
+        window.location.replace("/404.html");
+        return false;
+    }
+}
+document.onkeydown = redirectCU;

@@ -304,6 +304,10 @@ section {
     border-radius: 12px;
 }
 
+.offers .btn-utama {
+    float: right;
+}
+
 .offers-box h2 {
     color: white;
 }
@@ -420,6 +424,11 @@ section {
 
     .offers-box h2 {
         text-align: center;
+    }
+
+    .offers .btn-utama {
+        display: block;
+        float: unset;
     }
 
     .navbar .nav-item {
