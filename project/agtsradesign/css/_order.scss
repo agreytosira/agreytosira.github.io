@@ -1,0 +1,30 @@
+.order {
+   background: $primaryColor;
+   color: $white;
+   padding: 120px 0px;
+
+   &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &-box {
+      text-align: center;
+
+      p {
+         padding: 10px 0px !important;
+      }
+
+      .sosmed {
+         color: $white;
+         font-size: 30px;
+         padding-left: 30px;
+         transition: all 0.2s ease;
+
+         &:hover {
+            color: darken($secondaryColor, 20%);
+         }
+      }
+   }
+}

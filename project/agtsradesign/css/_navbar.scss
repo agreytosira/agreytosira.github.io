@@ -1,0 +1,24 @@
+.navbar {
+   background: $white;
+
+   &-brand {
+      font-weight: 700;
+      font-size: 24px;
+
+      span {
+         color: $primaryColor;
+      }
+   }
+
+   .nav-link {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      color: $darkText !important;
+      font-weight: 500;
+      transition: all 0.2s ease;
+
+      &:hover {
+         color: $primaryColor !important;
+      }
+   }
+}

@@ -1,0 +1,28 @@
+.services {
+   padding: 120px 0px;
+   color: $white;
+   background-color: $primaryColor;
+
+   &-box {
+      text-align: center;
+      margin-top: 120px;
+
+      h3 {
+         padding: 10px 0px;
+      }
+
+      p {
+         color: $lightTextBlue !important;
+      }
+   }
+
+   span {
+      color: $secondaryColor;
+   }
+
+   img {
+      width: 125px;
+   }
+
+
+}

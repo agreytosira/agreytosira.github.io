@@ -1,0 +1,12 @@
+@mixin btn-variant($background, $color) {
+   background-color: $background;
+   color: $color;
+   transition: all 0.2s ease;
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+
+   &:hover {
+      background: darken($background, 20%);
+      color: $color;
+   }
+}

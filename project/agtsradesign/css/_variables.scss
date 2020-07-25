@@ -1,0 +1,40 @@
+$primaryColor : #437FE3;
+$secondaryColor :#ffda71;
+$darkText : #1c1c1c;
+$lightTextGrey : #787878;
+$lightTextBlue : #D2E3FF;
+$white :#fff;
+
+body {
+   font-family: 'Poppins', sans-serif !important;
+   color: $darkText !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+   margin-bottom: 0px;
+}
+
+h1 {
+   font-weight: 700;
+   font-size: 45px !important;
+}
+
+h2 {
+   font-weight: 700;
+   font-size: 32px !important;
+}
+
+h3 {
+   font-size: 24px !important;
+}
+
+p {
+   font-size: 16px !important;
+   font-family: 'Inter', sans-serif !important;
+   line-height: 30px;
+}
