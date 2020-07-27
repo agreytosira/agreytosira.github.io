@@ -38,7 +38,7 @@
 }
 
 #link-aktif {
-   color: darken($primaryColor, 20%) !important;
+   color: $primaryColor !important;
 
    &::after {
       content: '';

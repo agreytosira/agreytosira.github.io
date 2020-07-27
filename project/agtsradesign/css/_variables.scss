@@ -5,6 +5,10 @@ $lightTextGrey : #787878;
 $lightTextBlue : #D2E3FF;
 $white :#fff;
 
+::-moz-selection {
+   background: red !important;
+}
+
 body {
    font-family: 'Poppins', sans-serif !important;
    color: $darkText !important;
@@ -30,6 +34,7 @@ h2 {
 }
 
 h3 {
+   font-weight: 700;
    font-size: 24px !important;
 }
 

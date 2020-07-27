@@ -1,3 +1,7 @@
+::-moz-selection {
+  background: red !important;
+}
+
 body {
   font-family: 'Poppins', sans-serif !important;
   color: #1c1c1c !important;
@@ -23,6 +27,7 @@ h2 {
 }
 
 h3 {
+  font-weight: 700;
   font-size: 24px !important;
 }
 
@@ -32,7 +37,7 @@ p {
   line-height: 30px;
 }
 
-.radius, .portfolio-box img {
+.radius, .portfolio-box img, .portfolio-page-box img {
   border-radius: 10px;
 }
 
@@ -78,7 +83,7 @@ p {
 }
 
 #link-aktif {
-  color: #194ea7 !important;
+  color: #437FE3 !important;
 }
 
 #link-aktif::after {
@@ -191,6 +196,34 @@ p {
 }
 
 .portfolio-box img {
+  width: 100%;
+}
+
+.portfolio-page {
+  background: #437FE3;
+  padding: 160px 0px;
+  color: #fff;
+}
+
+.portfolio-page h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #ffda71;
+}
+
+.portfolio-page-row {
+  margin-top: 60px;
+}
+
+.portfolio-page-button {
+  margin-top: 30px;
+}
+
+.portfolio-page-box {
+  margin-top: 30px;
+}
+
+.portfolio-page-box img {
   width: 100%;
 }
 
@@ -314,5 +347,51 @@ p {
   .footer h3 {
     margin-top: 20px;
   }
+}
+
+.about-page {
+  padding: 160px 0px;
+  background: #437FE3;
+  color: #fff;
+}
+
+.about-page h2 {
+  text-align: center;
+}
+
+.about-page h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #ffda71;
+}
+
+.about-page p {
+  margin-top: 30px;
+}
+
+.contact-page {
+  padding: 160px 0px;
+  background: #437FE3;
+  color: #fff;
+}
+
+.contact-page a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-page h2,
+.contact-page h3 {
+  text-align: center;
+}
+
+.contact-page h3 {
+  margin-bottom: 10px !important;
+  color: #ffda71;
+}
+
+.contact-page p {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
