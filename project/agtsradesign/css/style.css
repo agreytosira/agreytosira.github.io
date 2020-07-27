@@ -58,8 +58,36 @@ p {
   transition: all 0.2s ease;
 }
 
+.navbar .nav-link::after {
+  margin: auto;
+  content: '';
+  height: 2px;
+  width: 1px;
+  display: block;
+  background: #ffda71;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 50%;
+}
+
 .navbar .nav-link:hover {
-  color: #437FE3 !important;
+  color: #194ea7 !important;
+}
+
+#link-aktif {
+  color: #194ea7 !important;
+}
+
+#link-aktif::after {
+  content: '';
+  background: #ffda71;
+  height: 2px;
+  width: 50%;
+  margin: auto;
+  display: block;
 }
 
 .jumbotron {

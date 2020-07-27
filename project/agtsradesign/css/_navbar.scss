@@ -17,8 +17,35 @@
       font-weight: 500;
       transition: all 0.2s ease;
 
-      &:hover {
-         color: $primaryColor !important;
+      &::after {
+         margin: auto;
+         content: '';
+         height: 2px;
+         width: 1px;
+         display: block;
+         background: $secondaryColor;
+         transition: all 0.2s ease;
       }
+
+      &:hover::after {
+         width: 50%;
+      }
+
+      &:hover {
+         color: darken($primaryColor, 20%) !important;
+      }
+   }
+}
+
+#link-aktif {
+   color: darken($primaryColor, 20%) !important;
+
+   &::after {
+      content: '';
+      background: $secondaryColor;
+      height: 2px;
+      width: 50%;
+      margin: auto;
+      display: block;
    }
 }
