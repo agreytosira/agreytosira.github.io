@@ -7,7 +7,3 @@ $('document').ready(function () {
         loop: true
     });
 });
-
-var lazyLoadInstance = new LazyLoad({
-    // Your custom settings go here
-});
