@@ -1,0 +1,56 @@
+@import 'variable';
+@import 'button';
+@import 'navbar';
+@import 'jumbotron';
+@import 'about';
+@import 'tools';
+@import 'project';
+@import 'testimonials';
+@import 'footer';
+@import 'responsive';
+@import 'about-page';
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    background: $lightDarken;
+    width: 1%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $dark;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: $background;
+}
+
+p {
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    font-weight: 700;
+}
+
+.bg-blue {
+    background: lighten($blue, 10%) !important;
+}
+
+.bg-yellow {
+    background: lighten($yellow, 10%) !important;
+}
+
+.bg-dark {
+    background: lighten($dark, 10%) !important;
+}

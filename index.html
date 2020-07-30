@@ -1,286 +1,259 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="img/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agrey Tosira - Front-end Developer</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Open Graph Meta -->
-  <meta property="og:title" content="Agrey Tosira - Front-end Web Developer" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description"
-    content="Selamat datang di Website Portfolio Agrey Tosira. Saya adalah seorang Front-end Web Developer" />
-  <meta property="og:image" content="https://agreytosira.my.id/img/thumbnail.png" />
-  <meta property="og:site_name" content="Agrey Tosira - Front-end Web Developer" />
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Agrey Tosira - Front-end Developer</title>
+    <!-- Font External -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 </head>
 
-<body>
+<body id="page-top">
 
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" id="link-aktif" href="index.html">Home</a>
-          <a class="nav-item nav-link" href="projects.html">My Projects</a>
-          <a class="nav-item nav-link" href="about.html">About Me</a>
-          <a class="nav-item nav-link" href="https://blog.agreytosira.my.id">Blog</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 m-auto text-center jumbotron-left" data-aos="fade-right">
-          <h2>Hi, I'm Agrey Tosira</h2>
-          <h1>I am <span id="typed"></span></h1>
-          <p>I’m from Indonesia and I have been working as a Front-end Developer for more than 1 year.
-            Besides Front-end Dev, i am also a Graphic Designer and UI/UX Designer. and I have also been a
-            Freelancer for one year.</p>
-          <a href="mailto:agreytosira@gmail.com" class="btn-utama"><i class="fa fa-envelope"></i> Email Me</a>
-          <a href="resume.pdf" class="btn-biasa"><i class="fa fa-download"></i> Download CV</a>
-          <br>
-          <div class="jumbotron-socmed">
-            <a href="https://dribble.com/agreytosira" class="btn-social"><i class="fab fa-dribbble"></i></a>
-            <a href="https://facebook.com/darknessdreamz" class="btn-social"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com/agtsradesign" class="btn-social"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Featured Projects -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 section-heading">
-          <h1>Featured Projects</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="project-box" data-aos="fade-up">
-            <a href="details/agtsradesign.html"><img src="img/portfolio/agtsradesign.jpg" alt=""></a>
-            <h2>AGTSRADESIGN - Web Design</h2>
-            <a href="project/agtsradesign/index.html" class="btn-biasa"><i class="fas fa-eye"></i>
-              Visit Website</a>
-            <a href="details/agtsradesign.html" class="btn-biasa"><i class="fa fa-file-alt"></i>
-              Project Details</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="project-box" data-aos="fade-up">
-            <a href="details/cleverclass.html"><img src="img/portfolio/cleverclass-min.jpg" alt=""></a>
-            <h2>CleverClass - Web Design</h2>
-            <a href="project/cleverclass/index.html" class="btn-biasa"><i class="fas fa-eye"></i>
-              Visit Website</a>
-            <a href="details/cleverclass.html" class="btn-biasa"><i class="fa fa-file-alt"></i>
-              Project Details</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="project-box" data-aos="fade-up">
-            <a href="details/luxuryresto.html"><img src="img/portfolio/luxuryresto-min.jpg" alt=""></a>
-            <h2>Luxury Resto - Web Design</h2>
-            <a href="project/luxuryresto/index.html" class="btn-biasa"><i class="fas fa-eye"></i>
-              Visit Website</a>
-            <a href="details/luxuryresto.html" class="btn-biasa"><i class="fa fa-file-alt"></i>
-              Project Details</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="project-box" data-aos="fade-up">
-            <a href="details/wonderfulbali.html"><img src="img/portfolio/wonderfulbali-min.jpg" alt=""></a>
-            <h2>Wonderful Bali - Web Design</h2>
-            <a href="project/wonderfulbali/" class="btn-biasa"><i class="fas fa-eye"></i>
-              Visit Website</a>
-            <a href="details/wonderfulbali.html" class="btn-biasa"><i class="fa fa-file-alt"></i>
-              Project Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Offers -->
-  <section class="offers" id="offers">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="offers-box" data-aos="fade-up">
-            <div class=" row">
-              <div class="col-md-8">
-                <h2>Interested working with me?</h2>
-              </div>
-              <div class="col-md-4">
-                <a href="projects.html" class="btn-cadangan">See More Projects</a>
-                <a href="mailto:agreytosira@gmail.com" class="btn-utama">Email Me</a>
-              </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img class="lazy" src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="aktif" href="#page-top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://blog.agreytosira.my.id">Blog</a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Why Hire Me? -->
-  <section class="hire" data-aos="fade-up">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 section-heading">
-          <h1>Why Hire Me?</h2>
+    <!-- Jumbotron -->
+    <section class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 m-auto text-center">
+                    <h3>Hi, I'm Agrey Tosira</h3>
+                    <h2><span id="typed"></span></h2>
+                    <p>I’m from Indonesia and I have been working as a Front-end Developer for more than 1 year.
+                        Besides Front-end Dev, i am also a Graphic Designer and UI/UX Designer.
+                        Now I am looking forward to collaborate with you!</p>
+                    <a href="https://www.facebook.com/darknessdreamz" class="sosmed"> <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/agtsradesign" class="sosmed"> <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.twitter.com/atosira" class="sosmed"> <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/agreytosira" class="sosmed"> <i class="fab fa-github"></i> </a>
+                    <a href="https://www.dribbble.com/agreytosira" class="sosmed"> <i class="fab fa-dribbble"></i> </a>
+                    <br>
+                    <a href="#" class="btn btn-primary">Hire Me</a>
+                </div>
+            </div>
         </div>
-        <div class="col-10 m-auto">
-          <div class="row hire-row">
-            <div class="col-md-6 hire-list">
-              <div class="row">
-                <div class="col-md-3">
-                  <center><img src="img/communicative.png" alt=""></center>
-                </div>
-                <div class="col-md-9">
-                  <h2>Communicative</h2>
-                  <p>I can communicate all of my ideas
-                    well to make things clearer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 hire-list">
-              <div class="row">
-                <div class="col-md-3">
-                  <center><img src="img/collaborative.png" alt=""></center>
-                </div>
-                <div class="col-md-9">
-                  <h2>Collaborative</h2>
-                  <p>I can work within a team and adjust
-                    myself to work better together
-                    with the team.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 hire-list">
-              <div class="row">
-                <div class="col-md-3">
-                  <center><img src="img/timeManagement.png" alt=""></center>
-                </div>
-                <div class="col-md-9">
-                  <h2>Time Management</h2>
-                  <p>I can Manage my time on
-                    Working a Project as good
-                    as possible.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 hire-list">
-              <div class="row">
-                <div class="col-md-3">
-                  <center><img src="img/clientFavourite.png" alt=""></center>
-                </div>
-                <div class="col-md-9">
-                  <h2>Clients Favourite</h2>
-                  <p>I've been Freelancing for more than 1 year,
-                    already accustomed to hearing positive
-                    feedback from clients.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Tools and Skills -->
-  <section class="tools" id="tools">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 section-heading">
-          <h1>Tools and Skills</h1>
+    <!-- About Me -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">About Me</h3>
+                    <div class="about-box">
+                        <div class="row">
+                            <div class="col-md-6 about-left">
+                                <p>Hi, I am Agrey Tosira, Front-end Web Developer from Indonesia. <br>
+                                    I Have 1 years experience working as Front-end Dev and more
+                                    than 2 years experience in Web Design, Bulding, and
+                                    Customization. I am also good at Blogger.</p>
+                                <a href="#" class="btn btn-primary">Hire Me</a>
+                            </div>
+                            <div class="col-md-6 about-right">
+                                <p>Web Development</p>
+                                <p class="float-right">85%</p>
+                                <div class="progress" style="height: 16px;">
+                                    <div class="progress-bar bg-blue" role="progressbar" style="width: 85%;"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p>UI/UX Design</p>
+                                <p class="float-right">70%</p>
+                                <div class="progress" style="height: 16px;">
+                                    <div class="progress-bar bg-yellow" role="progressbar" style="width: 70%;"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p>Graphic Design</p>
+                                <p class="float-right">70%</p>
+                                <div class="progress" style="height: 16px;">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 tools-box" data-aos="fade-up">
-          <center>
-            <img src="img/skill1.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Adobe XD">
-            <img src="img/skill2.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Adobe Illustrator">
-            <img src="img/skill3.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Adobe Photoshop">
-            <img src="img/skill4.png" alt="" data-toggle="tooltip" data-placement="bottom" title="HTML5">
-            <img src="img/skill5.png" alt="" data-toggle="tooltip" data-placement="bottom" title="CSS3">
-            <img src="img/skill6.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Javascript">
-            <img src="img/skill7.png" alt="" data-toggle="tooltip" data-placement="bottom" title="jQuery">
-            <img src="img/skill8.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Figma">
-            <img src="img/skill9.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Bootstrap 4">
-            <img src="img/skill10.png" alt="" data-toggle="tooltip" data-placement="bottom" title="GitHub">
-            <img src="img/skill11.png" alt="" data-toggle="tooltip" data-placement="bottom" title="SASS">
-            <img src="img/skill12.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Git">
-          </center>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Social Media</h3>
-          <ul>
-            <li><a href="https://twitter.com/atosira"><i class="fab fa-twitter"></i> @ATosira</a></li>
-            <li><a href="https://instagram.com/agtsradesign"><i class="fab fa-instagram"></i>
-                @agtsradesign</a>
-            </li>
-            <li><a href="https://facebook.com/darknessdreamz"><i class="fab fa-facebook"></i> AGREY
-                TOSIRA</a></li>
-            <li><a href="https://github.com/agreytosira"><i class="fab fa-github"></i> agreytosira</a></li>
-            <li><a href="https://dribbble.com/agreytosira"><i class="fab fa-dribbble"></i> Agrey Tosira</a>
-            </li>
-          </ul>
+    <!-- Tools And Skills -->
+    <section class="tools">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 m-auto text-center tools-box">
+                    <h3>Tools and Skills</h3>
+                    <img class="lazy" src="img/1.png">
+                    <img class="lazy" src="img/2.png">
+                    <img class="lazy" src="img/3.png">
+                    <img class="lazy" src="img/4.png">
+                    <img class="lazy" src="img/5.png">
+                    <img class="lazy" src="img/6.png">
+                    <img class="lazy" src="img/7.png">
+                    <img class="lazy" src="img/8.png">
+                    <img class="lazy" src="img/9.png">
+                    <img class="lazy" src="img/10.png">
+                    <img class="lazy" src="img/11.png">
+                    <img class="lazy" src="img/12.png">
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h3>Links</h3>
-          <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-            <li><a href="https://blog.agreytosira.my.id">Blog</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h3>Get in touch</h3>
-          <ul>
-            <p>For business inquiry please send email to
-              <a href="mailto:agreytosira@gmail.com">agreytosira@gmail.com</a></p>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
-  </script>
-  <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  <a href="#" class="backToTop"></a>
+    <!-- Featured Project -->
+    <section class="project">
+        <div class="container">
+            <h3 class="text-center">Featured Project</h3>
+            <div class="row">
+                <div class="col-md-6 project-box">
+                    <a href="detail/agtsradesign.html"><img class="lazy" src="img/portfolio/agtsradesign.jpg"></a>
+                    <a href="detail/agtsradesign.html">
+                        <h4>AGTSRADesign - Web Design</h4>
+                    </a>
+                    <a href="project/agtsradesign/"><i class="fas fa-eye"></i> Visit Website</a>
+                    <a href="detail/agtsradesign.html"><i class="fas fa-book"></i> Project Details</a>
+                </div>
+                <div class="col-md-6 project-box">
+                    <a href="detail/cleverclass.html"><img class="lazy" src="img/portfolio/cleverclass.jpg"></a>
+                    <a href="detail/cleverclass.html">
+                        <h4>CleverClass - Web Design</h4>
+                    </a>
+                    <a href="project/cleverclass/"> <i class="fas fa-eye"></i> Visit Website</a>
+                    <a href="detail/cleverclass.html"><i class="fas fa-book"></i> Project Details</a>
+                </div>
+                <div class="col-md-6 project-box">
+                    <a href="detail/luxuryresto.html"><img class="lazy" src="img/portfolio/luxuryresto.jpg"></a>
+                    <a href="detail/luxuryresto.html">
+                        <h4>LuxuryResto - Web Design</h4>
+                    </a>
+                    <a href="project/luxuryresto/"> <i class="fas fa-eye"></i> Visit Website</a>
+                    <a href="detail/luxuryresto.html"><i class="fas fa-book"></i> Project Details</a>
+                </div>
+                <div class="col-md-6 project-box">
+                    <a href="detail/wonderfulbali.html"><img class="lazy" src="img/portfolio/wonderfulbali.jpg"></a>
+                    <a href="detail/wonderfulbali.html">
+                        <h4>Wonderful Bali - Web Design</h4>
+                    </a>
+                    <a href="project/wonderfulbali/"> <i class="fas fa-eye"></i> Visit Website</a>
+                    <a href="detail/wonderfulbali.html"><i class="fas fa-book"></i> Project Details</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center mt-5">
+                    <a href="projects.html" class=" btn btn-primary">See More Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 m-auto text-center">
+                    <h3 class="text-center">Testimonials</h3>
+                    <div class="profile m-auto">
+                        R
+                    </div>
+                    <h4 class="profile-name">Rahmat Arya</h4>
+                    <p class="profile-work">Graphic Designer</p>
+                    <div class="profile-box">
+                        <p>" Agrey Tosira was a great partner for my Website Project, <br>
+                            he not only designed but he also developed it by himself. "</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-left">
+                    <h4>Social Media</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-center">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="https://blog.agreytosira.my.id">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-right">
+                    <h4>Get in touch</h4>
+                    <p>For business inquiry please send email to
+                        <a href="mailto:agreytosira@gmail.com">agreytosira@gmail.com</a></p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">Portfolio Agrey Tosira 2020 - Design and Developed by <b>Agrey Tosira</b></p>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- LazyLoad -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

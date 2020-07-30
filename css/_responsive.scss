@@ -1,0 +1,74 @@
+@media (max-width:768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .about {
+        padding: 60px 0px;
+
+        &-left {
+            text-align: center;
+
+            .btn {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    .tools {
+        padding: 60px 0px;
+    }
+
+    .project {
+        padding: 60px 0px;
+    }
+
+    .testimonials {
+        padding: 60px 0px;
+    }
+
+    .footer {
+        text-align: center;
+
+        h4 {
+            margin-top: 30px;
+        }
+
+        hr {
+            margin: 30px 0px;
+        }
+    }
+
+    #aktif::after {
+        display: none !important;
+    }
+
+    .nav-link {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .nav-link:after {
+        display: none !important;
+    }
+}

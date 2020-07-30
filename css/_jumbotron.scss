@@ -1,0 +1,26 @@
+.jumbotron {
+    padding: 120px 0px;
+    padding-top: 160px;
+    background: $dark !important;
+    color: $light;
+    height: 100vh;
+
+    h3 {
+        color: $blue;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: $lightDarken;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+}
