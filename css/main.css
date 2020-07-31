@@ -337,10 +337,10 @@
   .about-left .btn {
     margin-bottom: 60px;
   }
-  .tools {
-    padding: 60px 0px;
+  .about-page {
+    padding: 120px 0px !important;
   }
-  .project {
+  .tools {
     padding: 60px 0px;
   }
   .testimonials {
