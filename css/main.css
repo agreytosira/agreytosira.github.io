@@ -19,6 +19,25 @@
   background: #0062cc !important;
 }
 
+.btn-secondary {
+  border: none;
+  background: #ffcc00;
+  color: #1a202e;
+  -webkit-transform: .2s;
+          transform: .2s;
+  -webkit-box-shadow: 0px 3px 0px #cca300;
+          box-shadow: 0px 3px 0px #cca300;
+}
+
+.btn-secondary:hover, .btn-secondary.active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  background: #e6b800 !important;
+  color: #1a202e !important;
+}
+
 .sosmed {
   font-size: 30px;
   padding: 0px 5px;
@@ -429,6 +448,35 @@
   width: 50%;
   display: block;
   margin-bottom: 10px;
+}
+
+.notfound {
+  text-align: center;
+  height: 100vh;
+  background: url(https://mocah.org/uploads/posts/4546111-astronaut-simple-background-simple-space-flag-vector.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.notfound-box {
+  margin-top: 120px !important;
+  color: #fff;
+  padding: 60px;
+  border-radius: 10px;
+  background: #007bff;
+}
+
+.notfound p {
+  margin-top: 10px;
+}
+
+.notfound .btn {
+  margin-top: 20px;
 }
 
 * {
