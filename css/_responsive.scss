@@ -1,4 +1,9 @@
 @media (max-width:768px) {
+    .jumbotron-fluid {
+        display: flex;
+        align-items: center !important;
+    }
+
     h1 {
         font-size: 30px;
     }
@@ -63,12 +68,38 @@
         display: none !important;
     }
 
+    .navbar-nav {
+        height: 100vh;
+        padding: 60px;
+    }
+
     .nav-link {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        text-align: center;
+        padding: 30px 0px;
+        transition: .3s;
+
+        &:hover,
+        &.active {
+            background: lighten($dark, 10%);
+        }
     }
 
     .nav-link:after {
         display: none !important;
+    }
+
+    .other {
+        &-box {
+            .btn-primary {
+                width: 90% !important;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .jumbotron {
+        display: flex;
+        align-items: center;
     }
 }
