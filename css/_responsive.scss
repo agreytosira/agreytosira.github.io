@@ -16,6 +16,9 @@
         font-size: 14px !important;
     }
 
+    section {
+        padding: 60px 0px !important;
+    }
 
     .navbar {
         padding: 20px !important;
@@ -50,6 +53,14 @@
 
     .section-head {
         text-align: center;
+    }
+
+    .projects {
+        .overlay {
+            .btn {
+                margin-bottom: 15px;
+            }
+        }
     }
 
     .tools {
