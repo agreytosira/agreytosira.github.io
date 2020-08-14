@@ -6,6 +6,14 @@ $sectionSecondary : #071843;
 $text : #fff;
 $textSecondary : #A8B2CB;
 
+::-webkit-scrollbar {
+    background: $textSecondary;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primary;
+}
+
 * {
     color: #fff;
     margin: 0;
