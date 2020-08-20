@@ -216,6 +216,9 @@ h5 {
     height: 300px;
     position: relative;
   }
+  .banner img {
+    padding: 0px !important;
+  }
   .footer {
     text-align: center;
   }
