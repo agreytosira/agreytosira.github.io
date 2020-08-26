@@ -1,0 +1,428 @@
+@import 'variables';
+
+p {
+    font-family: 'Open Sans', sans-serif !important;
+    line-height: 30px;
+    margin: 0;
+    color: $primary !important;
+}
+
+p.subheading {
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+h2.heading {
+    font-size: 32px !important;
+    text-align: center;
+    color: $primary;
+    margin-bottom: 60px;
+}
+
+.btn {
+    &-primary {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        background: $primary;
+        outline: none;
+        border: none;
+        border-radius: unset;
+        padding: 12px 24px;
+
+        &:hover {
+            background: lighten($primary, 10%);
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    color: $primary !important;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.navbar {
+    padding: 15px 0px;
+    background: white;
+
+    &-brand {
+        margin: auto;
+        text-align: center;
+
+        img {
+            width: 200px !important;
+        }
+    }
+
+    &-sosmed {
+        a {
+            color: $primary;
+            padding: 0px 1.5px;
+            font-size: 24px;
+        }
+    }
+}
+
+.tombolOpen {
+    font-size: 24px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.tombolClose {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+.sidebar {
+    top: 0;
+    left: 0;
+    width: 320px;
+    transform: translateX(-1000px);
+    height: 100%;
+    background: $primary;
+    transition: 0.5s ease;
+    z-index: 9999;
+
+    img {
+        width: 180px;
+    }
+
+    ul {
+        padding-top: 60px;
+        padding-left: 0px;
+
+        li {
+            list-style: none;
+            display: block;
+
+            .brand {
+                display: block;
+                padding: 14px 50px;
+                margin-bottom: 20px;
+            }
+
+            .nav-item {
+                display: block;
+                padding: 14px 50px;
+                font-family: 'Poppins', sans-serif;
+                color: #fff;
+
+                &:hover {
+                    text-decoration: none;
+                    background: lighten($primary, 10%);
+                }
+            }
+        }
+    }
+}
+
+.jumbotron {
+    background: #fff !important;
+    height: 100vh;
+
+    .row {
+        display: flex !important;
+        align-items: center !important;
+        height: 80vh;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        padding: 20px 0px;
+    }
+}
+
+.tentang {
+    background: url(../img/tentang.jpg);
+    padding: 60px 0px;
+}
+
+.varian {
+    padding: 60px 0px;
+
+    &-thumb {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        cursor: pointer;
+
+        .overlay {
+            transform: translateY(100%);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000000, $alpha: 0.5);
+
+            a {
+                font-size: 20px;
+                color: white;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &-thumb:hover .overlay {
+        transition: all 0.5s ease;
+        transform: translateY(0%);
+    }
+
+    &-item {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &-tombol {
+        margin-top: 60px;
+    }
+}
+
+.quotes {
+    padding: 60px 0px;
+
+    &-box {
+        p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        background: $secondary;
+        padding: 60px 92px;
+    }
+}
+
+.promo {
+    padding: 60px 0px;
+    background: url(../img/promo.jpg);
+
+    &-box {
+        background: $primary;
+
+        &-right {
+            padding-top: 20px;
+            margin-left: -50px;
+        }
+
+        p {
+            font-size: 14px;
+            color: white !important;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 14px;
+            color: white;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        h4 {
+            color: white !important;
+        }
+    }
+}
+
+.lokasi {
+    padding: 60px 0px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.footer {
+    padding: 60px 0px;
+    background: $primary;
+
+    h5 {
+        color: white;
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            line-height: 30px;
+            list-style: none;
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: lighten($primary, 50%);
+                }
+            }
+        }
+    }
+
+    a {
+        color: white;
+
+        &:hover {
+            color: lighten($primary, 50%);
+            text-decoration: none;
+        }
+    }
+
+    img {
+        margin-top: 20px;
+        width: 250px;
+    }
+
+    .credit {
+        hr {
+            background: $secondary;
+            margin: 30px 0px;
+        }
+
+        p {
+            font-size: 14px;
+            text-align: center;
+            color: white !important;
+        }
+    }
+}
+
+.varianpage {
+    padding: 120px 0px;
+
+    &-thumb {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        cursor: pointer;
+
+        .overlay {
+            transform: translateY(100%);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000000, $alpha: 0.5);
+
+            a {
+                font-size: 20px;
+                color: white;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &-thumb:hover .overlay {
+        transition: all 0.5s ease;
+        transform: translateY(0%);
+    }
+
+    &-item {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &-tombol {
+        margin-top: 60px;
+    }
+}
+
+.lokasipage {
+    padding: 120px 0px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.kontakpage {
+    padding: 120px 0px;
+
+    label {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        border: 2px solid $primary;
+        width: 100%;
+        display: block;
+        resize: none;
+        height: 200px;
+        padding: 15px;
+    }
+
+    label[for=pesan] {
+        margin-top: 20px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    input[type=text] {
+        height: 50px;
+        padding: 0px 20px;
+        outline: none;
+        border: 2px solid $primary;
+        width: 100%;
+    }
+}
+
+.promopage {
+    padding: 120px 0px;
+
+    p {
+        margin-top: 30px;
+    }
+}
+
+@import 'responsive';
