@@ -231,9 +231,16 @@ h5 {
     &-box {
         background: $primary;
 
+        &-left {
+            img {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
         &-right {
-            padding-top: 20px;
-            margin-left: -50px;
+            padding: 20px;
+            padding-left: 0px;
         }
 
         p {

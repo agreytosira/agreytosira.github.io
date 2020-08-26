@@ -243,9 +243,14 @@ h5 {
   background: #1C1C1C;
 }
 
+.promo-box-left img {
+  width: 100%;
+  padding: 10px;
+}
+
 .promo-box-right {
-  padding-top: 20px;
-  margin-left: -50px;
+  padding: 20px;
+  padding-left: 0px;
 }
 
 .promo-box p {
@@ -463,6 +468,17 @@ h5 {
   }
   .sidebar {
     width: 100vw !important;
+  }
+  .promo-box {
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .promo-box-right {
+    margin: 0;
+  }
+  .quotes-box {
+    padding: 60px 30px;
   }
   .footer {
     text-align: center;
