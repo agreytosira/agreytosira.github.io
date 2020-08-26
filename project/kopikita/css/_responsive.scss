@@ -34,10 +34,24 @@
         padding: 20px;
         margin-top: 30px;
         text-align: center;
-    }
+        display: flex;
+        flex-direction: column;
 
-    .promo-box-right {
-        margin: 0;
+        &-left {
+            display: block !important;
+            width: 100% !important;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        &-right {
+            padding: 10px;
+            margin: 0;
+        }
+
     }
 
     .quotes-box {

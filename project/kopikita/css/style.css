@@ -473,8 +473,24 @@ h5 {
     padding: 20px;
     margin-top: 30px;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .promo-box-left {
+    display: block !important;
+    width: 100% !important;
+  }
+  .promo-box-left img {
+    width: 100%;
+    display: block;
   }
   .promo-box-right {
+    padding: 10px;
     margin: 0;
   }
   .quotes-box {
