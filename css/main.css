@@ -362,6 +362,11 @@ p {
   text-align: center;
 }
 
+.notfound-box img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 24px !important;
