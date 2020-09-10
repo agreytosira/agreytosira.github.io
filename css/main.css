@@ -384,7 +384,7 @@ p {
     padding: 60px 0px !important;
   }
   .navbar {
-    padding: 20px !important;
+    padding: 10px 20px !important;
   }
   .navbar-nav {
     height: 100vh;
@@ -409,7 +409,7 @@ p {
     display: none !important;
   }
   .jumbotron {
-    margin-top: 80px;
+    margin-top: 0px;
   }
   .section-head {
     text-align: center;
