@@ -20,6 +20,11 @@
         padding: 60px 0px !important;
     }
 
+    .btn {
+        padding: 8px 15px !important;
+        font-size: 12px !important;
+    }
+
     .navbar {
         padding: 10px 20px !important;
 
@@ -56,7 +61,20 @@
     }
 
     .projects {
+        .label-tech {
+            top: 5px;
+            left: 5px;
+
+            p {
+                font-size: 11px !important;
+            }
+        }
+
         .overlay {
+            h5 {
+                margin-bottom: 10px;
+            }
+
             .btn {
                 margin-bottom: 15px;
             }
@@ -99,5 +117,9 @@
 
     .footer {
         text-align: center;
+    }
+
+    .case #preview-img {
+        width: 100% !important;
     }
 }

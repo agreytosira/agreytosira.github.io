@@ -6,6 +6,10 @@
   background-color: #1479E5;
 }
 
+.case #preview-img {
+  width: 32% !important;
+}
+
 * {
   color: #fff;
   margin: 0;
@@ -207,6 +211,28 @@ p {
   width: 100%;
 }
 
+.projects .label-tech {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 4;
+  font-weight: 600;
+  top: 10px;
+  left: 10px;
+}
+
+.projects .label-tech p {
+  border-radius: 5px;
+  padding: 0px 10px;
+  background-color: #ffcc00;
+  margin: 0px 10px;
+  margin-left: 0;
+  font-size: 12px !important;
+  color: #1c1c1c !important;
+}
+
 .projects .overlay {
   background-blend-mode: overlay;
   -webkit-transition: all 0.3s ease;
@@ -367,6 +393,78 @@ p {
   margin-bottom: 20px;
 }
 
+.colorpicker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.colorpicker hr {
+  width: 80%;
+  height: 1px;
+  background: #071843;
+  border: none;
+}
+
+.colorpicker .red {
+  margin: 10px 0px;
+}
+
+.colorpicker .green {
+  margin: 10px 0px;
+}
+
+.colorpicker .blue {
+  margin: 10px 0px;
+}
+
+.colorpicker .code {
+  margin: 10px;
+  border: 2px solid white;
+  padding: 5px 10px;
+}
+
+.colorpicker .warna {
+  display: inline-block;
+  border: 2px solid white;
+  width: 50px !important;
+  height: 50px !important;
+  margin: 20px 0px;
+  background: white;
+}
+
+.colorpicker .hasil-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.colorpicker .hasil-wrap .btn-copy {
+  display: inline-block;
+  cursor: pointer !important;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 24px !important;
@@ -382,6 +480,10 @@ p {
   }
   section {
     padding: 60px 0px !important;
+  }
+  .btn {
+    padding: 8px 15px !important;
+    font-size: 12px !important;
   }
   .navbar {
     padding: 10px 20px !important;
@@ -413,6 +515,16 @@ p {
   }
   .section-head {
     text-align: center;
+  }
+  .projects .label-tech {
+    top: 5px;
+    left: 5px;
+  }
+  .projects .label-tech p {
+    font-size: 11px !important;
+  }
+  .projects .overlay h5 {
+    margin-bottom: 10px;
   }
   .projects .overlay .btn {
     margin-bottom: 15px;
@@ -453,6 +565,9 @@ p {
   }
   .footer {
     text-align: center;
+  }
+  .case #preview-img {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
