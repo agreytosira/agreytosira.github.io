@@ -1,0 +1,233 @@
+$primary : #080C28;
+$secondary : #141E4B;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.btn {
+    &-primary {
+        padding: 16px 36px;
+        border-radius: 100px;
+        background: linear-gradient(to bottom, #007bff, #4115FF);
+        outline: none;
+        border: none;
+
+        &:hover {
+            box-shadow: 0px 0px 20px 5px rgba($color: #007bff, $alpha: 0.3);
+        }
+    }
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+body {
+    background-color: $primary !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: $secondary;
+
+    img {
+        height: 50px;
+    }
+}
+
+.jumbotron {
+    background: $primary;
+    text-align: center;
+
+    img {
+        margin-top: 60px;
+        width: 70%;
+    }
+
+    h1,
+    p {
+        margin-top: 20px;
+    }
+}
+
+.unggulan {
+    margin-bottom: 120px;
+
+    .game-box {
+        margin-top: 30px;
+
+        img {
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        a {
+            transition: all 0.5s ease;
+
+            &:hover {
+                text-decoration: none;
+
+                img {
+                    box-shadow: 0px 0px 10px 2px rgba($color: #007bff, $alpha: 0.5);
+                    transition: all 0.5s ease;
+                    mix-blend-mode: lighten;
+                }
+            }
+        }
+
+        .nama-game {
+            margin: 0px !important;
+            margin-top: 10px !important;
+        }
+
+        .harga {
+            margin-top: 10px !important;
+            margin-bottom: 0px !important;
+            font-weight: 700;
+        }
+    }
+
+    .lihat-semua-game {
+        text-align: center;
+
+        .btn {
+            margin-top: 60px;
+        }
+    }
+}
+
+.footer {
+    background: $secondary;
+    padding: 30px 0px;
+    padding-bottom: 20px;
+
+    &-left {
+        ul {
+            margin-top: 10px;
+
+            li {
+                line-height: 30px;
+                list-style: none;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        color: lighten($primary, 50%);
+                    }
+                }
+            }
+        }
+    }
+
+    &-center {
+        text-align: center;
+
+        img {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    &-right {
+        text-align: right;
+
+        ul {
+            margin-top: 10px;
+
+            li {
+                line-height: 30px;
+                list-style: none;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        color: lighten($primary, 50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.detail {
+    margin: 120px 0px;
+
+    &-screenshot {
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    &-box {
+        margin: 30px 0px;
+        padding: 30px;
+        padding-bottom: 15px;
+        background: $secondary;
+        border-radius: 10px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &-nama-game {
+        margin-top: 15px;
+        font-weight: 400;
+    }
+
+    &-harga-game {
+        display: inline-block;
+        border-radius: 10px;
+        padding: 10px 20px;
+        background: linear-gradient(to bottom, #007bff, #4115FF);
+        margin-top: 10px;
+    }
+
+    ul {
+        li {
+            margin-left: 16px;
+            line-height: 30px;
+        }
+    }
+}
