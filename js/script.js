@@ -5,4 +5,7 @@ $('document').ready(function () {
         typeSpeed: 40,
         loop: true
     });
+
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
 });
+
