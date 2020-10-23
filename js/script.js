@@ -1,11 +1,6 @@
-$('document').ready(function () {
-    var typed = new Typed('#typed', {
-        strings: ["Front-end Web Developer", "UI/UX Designer", "Graphic Designer"],
-        backSpeed: 10,
-        typeSpeed: 40,
-        loop: true
-    });
-
-    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+// Navbar Animate on Scroll
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 0)
+    navbar.classList.toggle("navbar-dark", window.scrollY > 0)
 });
-

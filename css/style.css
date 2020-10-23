@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+@font-face {
+  font-family: Mollen Condensed;
+  src: url(../font/MollenCondensed.woff);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Mollen Bold Condensed;
+  src: url(../font/MollenBoldCondensed.woff);
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Mollen Condensed', sans-serif !important;
+  color: #000;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+b {
+  font-family: 'Mollen Bold Condensed', sans-serif !important;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Mollen Bold Condensed', sans-serif !important;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Mollen Bold Condensed', sans-serif !important;
+}
+
+#link-aktif {
+  color: #000 !important;
+  background: #9CB2FF;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+  border-radius: 100px;
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  font-family: 'Mollen Condensed', sans-serif !important;
+  font-weight: 400 !important;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #9CB2FF;
+  color: #000 !important;
+}
+
+.btn-secondary {
+  background-color: #9CB2FF !important;
+  color: #000 !important;
+  border-radius: 100px;
+  padding: 10px 30px;
+  outline: none;
+  border: 2px solid #000;
+  font-family: 'Mollen Condensed', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.btn-secondary:hover {
+  background: #000 !important;
+  border: 2px solid #000;
+  color: #fff !important;
+}
+
+.scrolled {
+  padding: 10px 30px !important;
+  background-color: #000 !important;
+}
+
+.scrolled .nav-link {
+  color: #fff !important;
+}
+
+.scrolled .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar {
+  background: white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 25px 60px;
+}
+
+.navbar .nav-item {
+  margin: 10px 0px;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.navbar .nav-item .nav-link {
+  color: #000;
+  padding: 6px 20px;
+  border-radius: 100px;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  margin: 0px 10px;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #0A1128 !important;
+  background: #9CB2FF;
+}
+
+.navbar .navbar-brand {
+  font-size: 24px;
+  font-family: 'Mollen Bold Condensed', sans-serif !important;
+}
+
+.jumbotron {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: none;
+  color: #000;
+}
+
+.jumbotron h1 {
+  margin: 10px 0px;
+  margin-top: 20px;
+}
+
+.jumbotron .social-media {
+  margin: 20px 0px;
+}
+
+.jumbotron .social-media img {
+  width: 40px;
+  padding: 0px 8px;
+  fill: red;
+}
+
+.projects {
+  margin: 120px 0px;
+  text-align: center;
+}
+
+.projects-box {
+  margin-top: 24px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.projects-box:hover .overlay-box {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.projects-box .overlay-box {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.projects-box .overlay-box h2 {
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.projects img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.projects .section-title {
+  margin-bottom: 60px;
+}
+
+.projects .more-project {
+  margin-top: 30px;
+}
+
+.tools .section-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tools img {
+  margin: 0px 7px;
+  margin-top: 30px;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.tools img:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.offer {
+  margin: 120px 0px;
+}
+
+.offer-box {
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #9CB2FF;
+  margin: auto;
+  padding: 60px 0px;
+}
+
+.offer-box-left {
+  text-align: left;
+  padding-left: 60px;
+}
+
+.offer-box-right {
+  text-align: right;
+  padding-right: 60px;
+}
+
+.offer-box-right .btn-secondary {
+  margin-left: 10px;
+}
+
+.footer {
+  padding: 60px 0px;
+  border-top: 2px solid #9CB2FF;
+}
+
+.footer .social-media {
+  margin: 20px 0px;
+}
+
+.footer .social-media img {
+  width: 40px;
+  padding-right: 8px;
+  fill: red;
+}
+
+.footer ul li {
+  list-style: none;
+  line-height: 30px;
+}
+
+.footer ul li a {
+  font-size: 18px;
+  color: #000;
+}
+
+.footer ul li a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+.case {
+  margin: 120px 0px;
+  margin-top: 160px;
+}
+
+.case p {
+  color: #1c1c1c;
+}
+
+.case img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0px;
+}
+
+.case-back {
+  text-decoration: none;
+  color: #000;
+}
+
+.case-back:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+  .section-title {
+    margin-bottom: 15px !important;
+  }
+  .navbar {
+    padding: 30px;
+  }
+  .navbar-nav {
+    padding: 30px 0px;
+  }
+  .navbar .nav-item {
+    text-align: center;
+  }
+  .navbar .nav-link {
+    font-size: 18px;
+  }
+  .jumbotron {
+    margin-top: 30px;
+  }
+  .projects {
+    margin: 60px 0px;
+    margin-bottom: 90px;
+  }
+  .tools {
+    margin: 60px 0px;
+  }
+  .tools img {
+    width: 50px;
+  }
+  .offer {
+    margin: 60px 0px;
+  }
+  .offer-box-left {
+    text-align: center;
+    padding: 20px;
+  }
+  .offer-box-right {
+    padding: 0px 20px;
+  }
+  .offer-box-right .btn-primary {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .offer-box-right .btn-secondary {
+    margin: 0px;
+    display: block;
+  }
+  .footer {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
