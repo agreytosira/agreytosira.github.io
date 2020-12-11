@@ -448,6 +448,17 @@ h5 {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2,
+  h2.heading,
+  h4 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 14px;
+  }
   .navbar-brand {
     margin: auto;
   }
@@ -461,6 +472,21 @@ h5 {
     height: 900px;
     margin-top: 80px;
     text-align: center;
+    padding: 0px;
+  }
+  .jumbotron .jumbotron-left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .jumbotron .jumbotron-right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .jumbotron .jumbotron-right img {
+    margin-bottom: 30px;
+    width: 80%;
   }
   .jumbotron img {
     margin-top: 30px;

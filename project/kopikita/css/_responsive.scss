@@ -1,4 +1,18 @@
 @media (max-width:768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2,
+    h2.heading,
+    h4 {
+        font-size: 20px !important;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
     .navbar {
 
         &-brand {
@@ -20,6 +34,21 @@
         height: 900px;
         margin-top: 80px;
         text-align: center;
+        padding: 0px;
+
+        & &-left {
+            order: 2;
+
+        }
+
+        & &-right {
+            order: 1;
+
+            img {
+                margin-bottom: 30px;
+                width: 80%;
+            }
+        }
 
         img {
             margin-top: 30px;
