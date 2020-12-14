@@ -632,5 +632,8 @@ input[type="checkbox"] {
   .tools {
     margin: 60px 0px;
   }
+  .footer {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
