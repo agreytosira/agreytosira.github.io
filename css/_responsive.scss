@@ -1,4 +1,30 @@
 @media (max-width:768px) {
+
+    h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
     .leftnavbar {
         left: 30px;
         top: 30px;
@@ -7,5 +33,42 @@
     .menu-btn {
         right: 30px;
         top: 30px;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+
+    .section-title {
+        margin-bottom: 15px;
+    }
+
+    .offer {
+        margin: 60px 0px;
+
+        & &-box-left {
+            text-align: center;
+            padding: 10px;
+        }
+
+        & &-box-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+            .btn-utama {
+                margin-top: 10px;
+            }
+
+            .btn-kedua {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .tools {
+        margin: 60px 0px;
     }
 }

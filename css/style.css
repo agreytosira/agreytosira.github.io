@@ -567,6 +567,25 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
   .leftnavbar {
     left: 30px;
     top: 30px;
@@ -574,6 +593,44 @@ input[type="checkbox"] {
   .menu-btn {
     right: 30px;
     top: 30px;
+  }
+  .project-box {
+    width: 100%;
+  }
+  .section-title {
+    margin-bottom: 15px;
+  }
+  .offer {
+    margin: 60px 0px;
+  }
+  .offer .offer-box-left {
+    text-align: center;
+    padding: 10px;
+  }
+  .offer .offer-box-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .offer .offer-box-right .btn-utama {
+    margin-top: 10px;
+  }
+  .offer .offer-box-right .btn-kedua {
+    margin-top: 10px;
+  }
+  .tools {
+    margin: 60px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
