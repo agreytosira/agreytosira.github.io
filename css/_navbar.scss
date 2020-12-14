@@ -1,0 +1,126 @@
+// Navigation Bar
+
+.leftnavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    z-index: 11;
+    padding: 5px 20px;
+    left: 140px;
+    top: 35px;
+    text-align: center;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+
+    a {
+        font-size: 20px;
+        font-family: 'Neue Bold';
+        color: $primary;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.wrapper {
+    left: 0;
+    top: 0;
+    z-index: 10;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: $gradient-signature;
+    clip-path: circle(25px at calc(200% - 15px) -150px);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    & ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    & ul li {
+        margin: 15px 0;
+    }
+
+    & ul li a {
+        font-family: 'Neue Bold';
+        text-decoration: none;
+        font-size: 30px;
+        padding: 5px 30px;
+        color: #fff;
+        position: relative;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: #007bff;
+        }
+
+        &:hover:after {
+            transform: scaleY(1);
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            background: $primary;
+            width: 100%;
+            height: 50px;
+            left: 0;
+            border-radius: 50px;
+            transform: scaleY(0);
+            z-index: -1;
+            transition: transform 0.3s ease;
+        }
+    }
+}
+
+#active:checked~.wrapper {
+    clip-path: circle(75%);
+}
+
+.menu-btn {
+    position: fixed;
+    z-index: 11;
+    right: 140px;
+    /* left: 20px; */
+    top: 35px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    background: $gradient-signature;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#active:checked~.menu-btn {
+    background: #fff;
+    color: $primary;
+}
+
+#active:checked~.menu-btn i:before {
+    color: $primary;
+    content: "\f00d";
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+// End of Navigation Bar

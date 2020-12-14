@@ -1,157 +1,125 @@
-$blue :#9CB2FF;
-$black : #000;
+@import 'variable';
+@import 'font-face';
+@import 'utility';
+@import 'navbar';
+@import 'button';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-}
+// Jumbotron
+.social-media {
+    margin: 20px 0px;
 
-@font-face {
-    font-family: Mollen Condensed;
-    src: url(../font/MollenCondensed.woff);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: Mollen Bold Condensed;
-    src: url(../font/MollenBoldCondensed.woff);
-    font-weight: 700;
-}
-
-
-body {
-    font-family: 'Mollen Condensed', sans-serif !important;
-    color: $black;
-}
-
-p {
-    padding: 0;
-    margin: 0;
-    line-height: 30px;
-    font-size: 18px;
-}
-
-b {
-    font-family: 'Mollen Bold Condensed', sans-serif !important;
-}
-
-h1 {
-    font-size: 40px;
-    font-family: 'Mollen Bold Condensed', sans-serif !important;
-}
-
-h2 {
-    font-size: 30px;
-    font-family: 'Mollen Bold Condensed', sans-serif !important;
-}
-
-#link-aktif {
-    color: $black !important;
-    background: $blue;
-}
-
-.btn-primary {
-    background-color: $black;
-    color: #fff;
-    border-radius: 100px;
-    padding: 10px 30px;
-    outline: none;
-    border: none;
-    font-family: 'Mollen Condensed', sans-serif !important;
-    font-weight: 400 !important;
-    display: inline-block;
-
-    &:hover {
-        background: $blue;
-        color: $black !important;
-    }
-}
-
-.btn-secondary {
-    background-color: $blue !important;
-    color: $black !important;
-    border-radius: 100px;
-    padding: 10px 30px;
-    outline: none;
-    border: 2px solid $black;
-    font-family: 'Mollen Condensed', sans-serif !important;
-    font-weight: 400 !important;
-
-    &:hover {
-        background: $black !important;
-        border: 2px solid $black;
-        color: #fff !important;
-    }
-}
-
-.scrolled {
-    padding: 10px 30px !important;
-    background-color: $black !important;
-
-    .nav-link {
-        color: #fff !important;
+    img {
+        width: 30px;
     }
 
-    .navbar-brand {
-        color: #fff !important;
-    }
-}
-
-.navbar {
-    background: white;
-    transition: all 0.2s ease;
-    padding: 25px 60px;
-
-    .nav-item {
-        margin: 10px 0px;
-        display: inline-block;
-        font-weight: 400;
-
-        .nav-link {
-            color: $black;
-            padding: 6px 20px;
-            border-radius: 100px;
-            transition: background 0.2s ease;
-            margin: 0px 10px;
-
-            &:hover {
-                color: #0A1128 !important;
-                background: $blue;
-            }
-        }
-    }
-
-    .navbar-brand {
-        font-size: 24px;
-        font-family: 'Mollen Bold Condensed', sans-serif !important;
+    a {
+        padding: 0px 6px;
     }
 }
 
 .jumbotron {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 120px 0px;
     text-align: center;
     background: none;
-    color: $black;
 
     h1 {
         margin: 10px 0px;
-        margin-top: 20px;
     }
 
-    .social-media {
-        margin: 20px 0px;
 
-        img {
-            width: 40px;
-            padding: 0px 8px;
-            fill: red;
+}
+
+// End of Jumbotron
+
+// Featured
+.featured {
+    margin: 60px 0px;
+
+    .container-full {
+        .col-md-12 {
+            padding: 0px;
+
+            .featured-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 50px;
+
+                img {
+                    border-radius: 10px;
+                    width: 100%
+                }
+            }
+
+            #featured1 {
+                background: #49619A;
+            }
+
+            #featured2 {
+                background: #281510;
+            }
+
+            #featured3 {
+                background: #A0A0A0;
+            }
+
+            #featured4 {
+                background: #009974;
+            }
         }
+    }
+}
+
+.project {
+    margin: 120px 0px;
+    text-align: center;
+
+    &-box {
+        width: 50%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+
+        &:hover .overlay-box {
+            transform: translateX(0%);
+        }
+
+        .overlay-box {
+            transition: all 0.3s ease;
+            transform: translateX(-100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            background: rgba($color: #000000, $alpha: 0.7);
+
+
+            h2 {
+                display: block;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .section-title {
+        margin-bottom: 60px;
+    }
+
+    .more-project {
+        margin-top: 30px;
     }
 }
 
@@ -208,23 +176,7 @@ h2 {
     }
 }
 
-.tools {
-    .section-title {
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    img {
-        margin: 0px 7px;
-        margin-top: 30px;
-        border-radius: 10px;
-        transition: all 0.2s ease;
-
-        &:hover {
-            transform: translateY(-10px);
-        }
-    }
-}
+// Offer
 
 .offer {
     margin: 120px 0px;
@@ -233,7 +185,7 @@ h2 {
         border-radius: 10px;
         justify-content: center;
         align-items: center;
-        background: $blue;
+        background: $primary-light;
         margin: auto;
         padding: 60px 0px;
 
@@ -253,61 +205,41 @@ h2 {
     }
 }
 
-.footer {
-    padding: 60px 0px;
-    border-top: 2px solid $blue;
+// End of Offer
 
-    .social-media {
-        margin: 20px 0px;
+// Tools
 
-        img {
-            width: 40px;
-            padding-right: 8px;
-            fill: red;
-        }
-    }
-
-    ul {
-        li {
-            list-style: none;
-            line-height: 30px;
-
-            a {
-                font-size: 18px;
-                color: $black;
-
-                &:hover {
-                    color: lighten(#000, 20%);
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
-
-.case {
+.tools {
     margin: 120px 0px;
-    margin-top: 160px;
-
-    p {
-        color: #1c1c1c;
-    }
 
     img {
-        width: 100%;
+        padding: 8px;
         border-radius: 10px;
-        margin: 30px 0px;
-    }
-
-    &-back {
-        text-decoration: none;
-        color: #000;
+        transition: all 0.3s ease;
+        filter: grayscale(100%);
 
         &:hover {
-            text-decoration: none;
-            color: lighten(#000, 20%);
+            cursor: pointer;
+            transform: scale(1.2);
+            filter: grayscale(0%);
         }
     }
 }
 
-@import "responsive";
+// End of Tools
+
+// Footer
+
+.footer {
+    padding: 60px;
+    background: $primary-light;
+
+    .social-media {
+        margin: 0px;
+        margin-top: 20px;
+    }
+}
+
+// End of Footer
+
+@import 'responsive';
