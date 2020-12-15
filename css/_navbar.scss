@@ -35,7 +35,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background: $gradient-signature;
+    background: $secondary;
     clip-path: circle(25px at calc(200% - 15px) -150px);
     transition: all 0.3s ease-in-out;
     display: flex;
@@ -102,7 +102,7 @@
     font-size: 20px;
     color: #fff;
     cursor: pointer;
-    background: $gradient-signature;
+    background: $secondary;
     transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
