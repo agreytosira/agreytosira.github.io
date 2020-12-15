@@ -105,18 +105,6 @@ p {
   background-repeat: no-repeat;
 }
 
-#featured {
-  background: url(../img/featured.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#tools {
-  background-size: auto;
-  background: url(../img/tools.png);
-  background-repeat: no-repeat !important;
-}
-
 .leftnavbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,6 +573,11 @@ input[type="checkbox"] {
   }
   p {
     font-size: 14px;
+  }
+  .btn-utama,
+  .btn-kedua {
+    padding: 8px 20px;
+    font-size: 12px;
   }
   .leftnavbar {
     left: 30px;
