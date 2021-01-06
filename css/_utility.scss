@@ -1,86 +1,22 @@
-// Utility
-* {
-    margin: 0px;
-    padding: 0px;
-    color: #fff;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5 {
-    margin: 0px;
-    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
 }
-
-body {
-    background-color: $primary;
-}
-
-h1 {
-    font-family: 'Neue Extrabold';
-}
-
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Neue Bold';
-}
-
-
-span,
-b {
-    font-family: 'Neue Bold';
-    color: $secondary;
-}
-
-p {
-    font-family: 'Neue Book';
-    line-height: 30px;
-    margin: 0px;
-
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-// Font Size
 
 h1 {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    font-size: 20px;
-}
-
-h5 {
-    font-size: 18px;
+    font-size: 36px;
 }
 
 p {
-    font-size: 16px;
-}
-
-.heading-section {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
 }

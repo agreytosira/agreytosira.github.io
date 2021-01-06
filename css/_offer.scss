@@ -1,0 +1,26 @@
+.offer {
+    margin: 60px 0px;
+    padding: 60px 0px;
+
+    .btn-dua {
+        margin-right: 16px;
+    }
+
+    & &-content {
+        background: $primary;
+        padding: 80px 60px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+
+        .btn-kedua {
+            margin-right: 16px;
+        }
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+}

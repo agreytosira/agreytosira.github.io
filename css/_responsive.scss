@@ -1,12 +1,27 @@
 @media (max-width:768px) {
 
+    .wrapper {
+        ul {
+            padding: 0px;
+        }
+    }
+
+    .menu-btn {
+        right: 20px;
+        top: 20px;
+    }
+
+    .projects-line {
+        width: 30% !important;
+    }
+
     h1 {
-        font-size: 28px;
+        font-size: 26px;
         line-height: 40px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     h3 {
@@ -22,7 +37,7 @@
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .btn-utama,
@@ -32,13 +47,8 @@
     }
 
     .leftnavbar {
-        left: 30px;
-        top: 30px;
-    }
-
-    .menu-btn {
-        right: 30px;
-        top: 30px;
+        left: 20px;
+        top: 20px;
     }
 
     .project-box {
@@ -78,7 +88,60 @@
         margin: 60px 0px;
     }
 
+    .about {
+        & &-left {
+            text-align: center;
+            margin: 0px;
+            margin-top: 30px;
+        }
+
+        & &-right {
+            margin: 0px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-media {
+            text-align: center;
+
+            img {
+                padding: 0px 6px;
+            }
+        }
+    }
+
+    .offer {
+        margin: 60px 0px;
+        padding: 0px;
+
+        & &-content {
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            .btn-dua {
+                margin: 0px;
+                margin: 16px 0px;
+            }
+        }
+    }
+
+    .tools {
+        margin: 30px 0px;
+        margin-top: 60px;
+
+        & &-icon {
+            margin-top: 15px;
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
     .footer {
         text-align: center;
+        margin-top: 60px;
     }
 }

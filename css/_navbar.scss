@@ -8,19 +8,19 @@
     position: fixed;
     z-index: 11;
     padding: 5px 20px;
-    left: 140px;
+    left: 10%;
     top: 35px;
     text-align: center;
     border-radius: 10px;
-    background: none;
+    background: $primary;
     cursor: pointer;
-    background: #fff;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 20px rgba($color: darken($primary, 20%), $alpha: 0.3);
 
     a {
         font-size: 20px;
-        font-family: 'Neue Bold';
-        color: $primary;
+        font-family: 'Poppins';
+        color: #fff;
 
         &:hover {
             text-decoration: none;
@@ -35,7 +35,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background: $secondary;
+    background: $primary;
     clip-path: circle(25px at calc(200% - 15px) -150px);
     transition: all 0.3s ease-in-out;
     display: flex;
@@ -46,6 +46,7 @@
     & ul {
         list-style: none;
         text-align: center;
+        padding-left: 0px;
     }
 
     & ul li {
@@ -53,7 +54,7 @@
     }
 
     & ul li a {
-        font-family: 'Neue Bold';
+        font-family: 'Poppins';
         text-decoration: none;
         font-size: 30px;
         padding: 5px 30px;
@@ -62,7 +63,7 @@
         transition: all 0.3s ease;
 
         &:hover {
-            color: #007bff;
+            color: $primary;
         }
 
         &:hover:after {
@@ -72,7 +73,7 @@
         &:after {
             position: absolute;
             content: "";
-            background: $primary;
+            background: #fff;
             width: 100%;
             height: 50px;
             left: 0;
@@ -91,8 +92,7 @@
 .menu-btn {
     position: fixed;
     z-index: 11;
-    right: 140px;
-    /* left: 20px; */
+    right: 10%;
     top: 35px;
     height: 50px;
     width: 50px;
@@ -102,11 +102,12 @@
     font-size: 20px;
     color: #fff;
     cursor: pointer;
-    background: $secondary;
+    background: $primary;
     transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 20px rgba($color: darken($primary, 20%), $alpha: 0.3);
 }
 
 #active:checked~.menu-btn {

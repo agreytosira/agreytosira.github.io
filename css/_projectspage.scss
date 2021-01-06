@@ -1,0 +1,23 @@
+.jumbotron-projects {}
+
+.projectspage-line {
+    background-color: $primary;
+    height: 3px;
+    width: 50%;
+    border-radius: 100px;
+    display: block;
+}
+
+.projectspage-box {
+    overflow-x: hidden;
+    background: $primary;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectspage-content {
+    text-align: center;
+    color: #fff;
+}

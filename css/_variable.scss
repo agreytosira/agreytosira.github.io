@@ -1,15 +1,2 @@
-// Color Used
-$primary : #1A1A1A;
-$primary-light : #393939;
-$secondary : #007bff;
-$secondary-text : #BCBCBC;
-$gradient-signature : linear-gradient(90deg, #00FAE2, #01A3FE, #007BFF);
-$gradient-signature-hovered : linear-gradient(150deg, #00FAE2, #01A3FE, #007BFF);
-
-$textcolor : ('primary': #fff,
-    'secondary': #bcbcbc,
-);
-
-h1 {
-    color: map-get($textcolor, 'primary');
-}
+$primary : #0066D3;
+$secondary : #CCE5FF;
