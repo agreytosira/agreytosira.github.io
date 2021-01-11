@@ -702,6 +702,110 @@ p {
           transform: scale(1.25);
 }
 
+.logo {
+  margin: 8px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.logo:nth-child(1) {
+  background-image: url("../img/tools/1.png");
+}
+
+.logo:nth-child(2) {
+  background-image: url("../img/tools/2.png");
+}
+
+.logo:nth-child(3) {
+  background-image: url("../img/tools/3.png");
+}
+
+.logo:nth-child(4) {
+  background-image: url("../img/tools/4.png");
+}
+
+.logo:nth-child(5) {
+  background-image: url("../img/tools/5.png");
+}
+
+.logo:nth-child(6) {
+  background-image: url("../img/tools/6.png");
+}
+
+.logo:nth-child(7) {
+  background-image: url("../img/tools/7.png");
+}
+
+.logo:nth-child(8) {
+  background-image: url("../img/tools/8.png");
+}
+
+.logo:nth-child(9) {
+  background-image: url("../img/tools/9.png");
+}
+
+.logo:nth-child(10) {
+  background-image: url("../img/tools/10.png");
+}
+
+.logo:nth-child(11) {
+  background-image: url("../img/tools/11.png");
+}
+
+.logo:nth-child(12) {
+  background-image: url("../img/tools/12.png");
+}
+
+.logo:nth-child(13) {
+  background-image: url("../img/tools/13.png");
+}
+
+.logo::before, .logo::after {
+  --scale: 0;
+  --tooltip-color: #333;
+  --arrow-size: 10px;
+  position: absolute;
+  content: '';
+  top: -.25rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+          transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  -webkit-transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+.logo::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+  font-family: 'Poppins', sans-serif;
+  content: attr(data-tooltip);
+  color: white;
+  padding: 6px 20px;
+  background: var(--tooltip-color);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.logo:hover::before, .logo:hover::after {
+  --scale: 1;
+}
+
+.logo::after {
+  --translate-y: calc(-1 * var(--arrow-size));
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+}
+
 .footer {
   background: #0066D3 !important;
   margin-top: 120px;
@@ -883,6 +987,11 @@ p {
   }
   .tools .tools-icon img {
     width: 50px;
+  }
+  .tools .logo {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
   }
   .footer {
     text-align: center;
