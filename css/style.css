@@ -888,5 +888,14 @@ p {
     text-align: center;
     margin-top: 60px;
   }
+  .details .btn-satu {
+    margin-right: 0px !important;
+    margin-bottom: 8px;
+  }
+  .details .btn-satu,
+  .details .btn-empat {
+    text-align: center;
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

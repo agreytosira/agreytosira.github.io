@@ -144,4 +144,17 @@
         text-align: center;
         margin-top: 60px;
     }
+
+    .details {
+        .btn-satu {
+            margin-right: 0px !important;
+            margin-bottom: 8px;
+        }
+
+        .btn-satu,
+        .btn-empat {
+            text-align: center;
+            display: block;
+        }
+    }
 }
