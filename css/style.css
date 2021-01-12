@@ -768,7 +768,7 @@ p {
 
 .logo::before, .logo::after {
   --scale: 0;
-  --tooltip-color: #333;
+  --tooltip-color: #007bff;
   --arrow-size: 10px;
   position: absolute;
   content: '';
