@@ -451,6 +451,15 @@ p {
   line-height: 30px;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0066D3;
+  border-radius: 6px;
+}
+
 .projects {
   margin: 60px 0px;
 }
